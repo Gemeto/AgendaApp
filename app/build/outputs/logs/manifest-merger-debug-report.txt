@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\48ca60f319c848f5969e49332a6d5bd5\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ebb81c5c5e3712ce08bdfe0a925d21c\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\48f1bb2eb6dca423c32e1bceaf295daf\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\8e40adaf81d54dd5fc4f12f48ad6cc5f\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\00a509c90489ab87041c8dbf85c82a2b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\023408553865443ac7d2bdd0764ff27d\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ffd7237412f274fcf563aa607fc00bbe\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\64bb2a9840827ca0eee437319e13a301\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\d80801c38f4fb7587b9f796999cc6f36\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\370c39437b55cdb1ea5d8ed5c28c7ac0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\4c13264aa37d19ab95af7434d35ef5ed\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\9c059ff567cde2c5a48244974265ab9d\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\c3de1d800c31443127dfa854643d19dc\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\472454a7742932f7207e3cdb4ec101b7\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\f1d0704ec022ed9ec76e854ab7af2bcb\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5ecabd234195c4e345aee349997e954b\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\91dbe25355f32ec590aa91cf62dc070b\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\6a7ca2874f15160569326ef5070c52a2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\a2d6312dcdf945161d49f4504444ce21\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d6d8e0fef592b4f9d274abd261d0ba5f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\bf9b54753346b0c035c76dc0f0873910\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\73bad763e6e8e6a86d802fcf248a5b95\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\4527e122839658360c7380b7dcca7cd1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8bee46f942658dac1d7db98a32487413\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\7cb2c0b9c230a38d87b387a1a281ae29\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\f35061eff7910a537c4f2eed3deb8cc0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\bfa3776d97e45dbae57846c48d4b8436\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\a0e2166fdaa12b358a5b4f7a7cc68865\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\b164aaa748f9c313c6c70e38a5f8b71f\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\6e52b4ef92b53c922bd53ce15847ee93\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:17:1-22:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+	package
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:3:11-27
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:11-69
+application
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:5:5-31:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\7cb2c0b9c230a38d87b387a1a281ae29\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\7cb2c0b9c230a38d87b387a1a281ae29\AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:8:13-39
+	android:label
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:7:13-45
+	android:allowBackup
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:6:13-39
+	android:theme
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:9:13-44
+activity#sample.MainActivity
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:9-16:20
+	android:configChanges
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:54-115
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:11:13-15:29
+action#android.intent.action.MAIN
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:12:17-69
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:12:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:14:17-77
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:14:27-74
+activity#sample.CreateTaskActivity
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:9-23:20
+	android:configChanges
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:101-162
+	android:theme
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:60-100
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:19-59
+intent-filter#action:name:android.intent.action.SEARCH+category:name:android.intent.category.LAUNCHER
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.SEARCH
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:19:17-71
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:19:25-68
+activity#sample.BuscadorActivity
+ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:9-30:20
+	android:theme
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:58-105
+	android:name
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:19-57
+uses-sdk
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\48ca60f319c848f5969e49332a6d5bd5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\48ca60f319c848f5969e49332a6d5bd5\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ebb81c5c5e3712ce08bdfe0a925d21c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ebb81c5c5e3712ce08bdfe0a925d21c\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\48f1bb2eb6dca423c32e1bceaf295daf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\coordinatorlayout-1.0.0.aar\48f1bb2eb6dca423c32e1bceaf295daf\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\8e40adaf81d54dd5fc4f12f48ad6cc5f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-1.1.0.aar\8e40adaf81d54dd5fc4f12f48ad6cc5f\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\00a509c90489ab87041c8dbf85c82a2b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\drawerlayout-1.0.0.aar\00a509c90489ab87041c8dbf85c82a2b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\023408553865443ac7d2bdd0764ff27d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\fragment-1.1.0.aar\023408553865443ac7d2bdd0764ff27d\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ffd7237412f274fcf563aa607fc00bbe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\viewpager-1.0.0.aar\ffd7237412f274fcf563aa607fc00bbe\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\64bb2a9840827ca0eee437319e13a301\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\slidingpanelayout-1.0.0.aar\64bb2a9840827ca0eee437319e13a301\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\d80801c38f4fb7587b9f796999cc6f36\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\customview-1.0.0.aar\d80801c38f4fb7587b9f796999cc6f36\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\370c39437b55cdb1ea5d8ed5c28c7ac0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-utils-1.0.0.aar\370c39437b55cdb1ea5d8ed5c28c7ac0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\4c13264aa37d19ab95af7434d35ef5ed\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\transition-1.0.0.aar\4c13264aa37d19ab95af7434d35ef5ed\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\9c059ff567cde2c5a48244974265ab9d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cardview-1.0.0.aar\9c059ff567cde2c5a48244974265ab9d\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\c3de1d800c31443127dfa854643d19dc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\appcompat-resources-1.1.0.aar\c3de1d800c31443127dfa854643d19dc\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\472454a7742932f7207e3cdb4ec101b7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\swiperefreshlayout-1.0.0.aar\472454a7742932f7207e3cdb4ec101b7\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\f1d0704ec022ed9ec76e854ab7af2bcb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\asynclayoutinflater-1.0.0.aar\f1d0704ec022ed9ec76e854ab7af2bcb\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5ecabd234195c4e345aee349997e954b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\loader-1.0.0.aar\5ecabd234195c4e345aee349997e954b\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\91dbe25355f32ec590aa91cf62dc070b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\activity-1.0.0.aar\91dbe25355f32ec590aa91cf62dc070b\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\6a7ca2874f15160569326ef5070c52a2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-animated-1.1.0.aar\6a7ca2874f15160569326ef5070c52a2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\a2d6312dcdf945161d49f4504444ce21\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\vectordrawable-1.1.0.aar\a2d6312dcdf945161d49f4504444ce21\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d6d8e0fef592b4f9d274abd261d0ba5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\cursoradapter-1.0.0.aar\d6d8e0fef592b4f9d274abd261d0ba5f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\bf9b54753346b0c035c76dc0f0873910\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\interpolator-1.0.0.aar\bf9b54753346b0c035c76dc0f0873910\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\73bad763e6e8e6a86d802fcf248a5b95\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\documentfile-1.0.0.aar\73bad763e6e8e6a86d802fcf248a5b95\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\4527e122839658360c7380b7dcca7cd1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\localbroadcastmanager-1.0.0.aar\4527e122839658360c7380b7dcca7cd1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8bee46f942658dac1d7db98a32487413\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\8bee46f942658dac1d7db98a32487413\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\7cb2c0b9c230a38d87b387a1a281ae29\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.1.0.aar\7cb2c0b9c230a38d87b387a1a281ae29\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\f35061eff7910a537c4f2eed3deb8cc0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.1.0.aar\f35061eff7910a537c4f2eed3deb8cc0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\bfa3776d97e45dbae57846c48d4b8436\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-viewmodel-2.1.0.aar\bfa3776d97e45dbae57846c48d4b8436\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\a0e2166fdaa12b358a5b4f7a7cc68865\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\savedstate-1.0.0.aar\a0e2166fdaa12b358a5b4f7a7cc68865\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\b164aaa748f9c313c6c70e38a5f8b71f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\b164aaa748f9c313c6c70e38a5f8b71f\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\6e52b4ef92b53c922bd53ce15847ee93\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\6e52b4ef92b53c922bd53ce15847ee93\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:20:5-44
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml

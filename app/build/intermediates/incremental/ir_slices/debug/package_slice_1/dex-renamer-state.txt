@@ -1,0 +1,4 @@
+#Thu Feb 27 19:00:16 CET 2020
+base.0=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+renamed.0=classes.dex
+path.0=classes.dex
