@@ -1115,6 +1115,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addTask
 id alertTitle
 id all
 id always
@@ -1279,6 +1280,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id taskBeginTim
+id taskBeginTime
 id taskDate
 id taskDescription
 id taskEndTime

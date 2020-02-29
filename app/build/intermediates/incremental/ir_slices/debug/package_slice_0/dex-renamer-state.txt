@@ -1,4 +1,4 @@
-#Thu Feb 27 19:00:16 CET 2020
-base.0=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Sat Feb 29 02:19:06 CET 2020
+base.0=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 renamed.0=classes.dex
 path.0=classes.dex

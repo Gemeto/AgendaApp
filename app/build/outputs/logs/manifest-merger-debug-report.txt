@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\48ca60f319c848f5969e49332a6d5bd5\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\legacy-support-core-ui-1.0.0.aar\3ebb81c5c5e3712ce08bdfe0a925d21c\AndroidManifest.xml:17:1-22:12
@@ -38,25 +38,25 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\skait\.gradle\caches
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-2.0.0.aar\b164aaa748f9c313c6c70e38a5f8b71f\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\6e52b4ef92b53c922bd53ce15847ee93\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:17:1-22:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
 	package
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:3:11-27
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:3:11-27
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:1-33:12
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:1-33:12
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:5:5-31:19
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:5:5-31:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.2] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\constraintlayout-1.1.2.aar\e9750300b8740eda9bc6cdc43402bb7f\AndroidManifest.xml:9:5-20
@@ -68,53 +68,53 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\sk
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-1.1.0.aar\a51c8891f56c2d52218edf8fce0996c4\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:8:13-39
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:8:13-39
 	android:label
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:7:13-45
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:7:13-45
 	android:allowBackup
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:6:13-39
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:6:13-39
 	android:theme
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:9:13-44
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:9:13-44
 activity#sample.MainActivity
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:9-16:20
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:10:9-16:20
 	android:configChanges
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:54-115
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:10:54-115
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:10:19-53
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:10:19-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:11:13-15:29
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:11:13-15:29
 action#android.intent.action.MAIN
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:12:17-69
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:12:17-69
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:12:25-66
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:12:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:14:17-77
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:14:17-77
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:14:27-74
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:14:27-74
 activity#sample.CreateTaskActivity
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:9-23:20
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:17:9-23:20
 	android:configChanges
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:101-162
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:17:101-162
 	android:theme
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:60-100
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:17:60-100
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:17:19-59
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:17:19-59
 intent-filter#action:name:android.intent.action.SEARCH+category:name:android.intent.category.LAUNCHER
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:18:13-22:29
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:18:13-22:29
 action#android.intent.action.SEARCH
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:19:17-71
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:17-71
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:19:25-68
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:25-68
 activity#sample.BuscadorActivity
-ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:9-30:20
+ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:theme
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:58-105
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:24:58-105
 	android:name
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml:24:19-57
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:24:19-57
 uses-sdk
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\material-1.0.0.aar\3b31b17ae03e99f947ad34dec895d5a9\AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\recyclerview-1.0.0.aar\48ca60f319c848f5969e49332a6d5bd5\AndroidManifest.xml:20:5-44
@@ -183,13 +183,13 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.g
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\lifecycle-livedata-core-2.0.0.aar\6e52b4ef92b53c922bd53ce15847ee93\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:20:5-44
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\skait\.gradle\caches\transforms-1\files-1.1\core-runtime-2.0.0.aar\98c60676fdeeb43384dfb7f0ef4d194a\AndroidManifest.xml:20:5-44
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		ADDED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
-		INJECTED from D:\IdeaProjects\AppBuena\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml

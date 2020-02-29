@@ -1,18 +1,18 @@
 #Internal package file, do not edit.
-#Fri Feb 28 02:26:40 CET 2020
+#Sat Feb 29 02:06:07 CET 2020
 3.set=DEX
-8.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+8.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
 3.path=classes.dex
-2.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+2.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
 0.path=classes.dex
 8.set=DEX
 9.baseType=DIRECTORY
 10.set=DEX
-5.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+5.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
 6.baseType=DIRECTORY
-0.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\20
-3.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\18
-6.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
+0.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+3.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+6.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 5.path=classes.dex
 9.set=DEX
 3.baseType=DIRECTORY
@@ -20,7 +20,7 @@
 1.path=classes.dex
 4.set=DEX
 0.baseType=DIRECTORY
-9.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+9.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 0.set=DEX
 5.baseType=DIRECTORY
 8.baseType=DIRECTORY
@@ -34,14 +34,14 @@ count=11
 1.set=DEX
 2.path=classes.dex
 2.baseType=DIRECTORY
-10.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\21
+10.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 2.set=DEX
 7.baseType=DIRECTORY
 1.baseType=DIRECTORY
 7.set=DEX
-7.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
-4.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+7.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+4.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 9.path=classes.dex
-1.base=D\:\\IdeaProjects\\AppBuena\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\19
+1.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\17
 4.baseType=DIRECTORY
 6.path=classes.dex

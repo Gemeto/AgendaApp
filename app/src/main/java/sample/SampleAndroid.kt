@@ -1,14 +1,20 @@
 package sample
 
+import android.app.Activity
+import android.app.ActivityOptions
 import android.content.ContentValues
 import android.content.Intent
 import android.content.res.Configuration
+import android.database.sqlite.SQLiteDatabase
 import android.os.Build
 import android.os.Bundle
 import android.transition.*
+import android.util.Pair
+import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.time.LocalDate
@@ -27,6 +33,7 @@ actual object Platform {
 }
 
 class MainActivity : AppCompatActivity() {
+    var bd0:BDManager = BDManager(this)
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,19 +41,7 @@ class MainActivity : AppCompatActivity() {
         Sample().checkMe()
 
 
-        var bd0 = BDManager(this)
-        var bd = bd0.writableDatabase
-        // Create a new map of values, where column names are the keys
-        val values = ContentValues().apply {
-            put("title", "Comer")
-            put("subtitle", "Mucho")
-        }
-        // Insert the new row, returning the primary key value of the new row
-        val newRowId = bd?.insert("TASK", null, values)
         val db = bd0.readableDatabase
-        // Define a projection that specifies which columns from the database
-        // you will actually use after this query.
-        val projection = arrayOf(1, "title", "subtitle")
         val cursor = db.query(
             "TASK",   // The table to query
             null ,             // The array of columns to return (pass null to get all)
@@ -57,10 +52,14 @@ class MainActivity : AppCompatActivity() {
             null               // The sort order
         )
         val itemIds = mutableListOf<Long>()
+
+        var list = ArrayList<Task>()
+
         with(cursor) {
             while (moveToNext()) {
                 val itemId = columnCount
                 println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+                list.add(Task(cursor.getString(1), cursor.getString(4)))
             }
         }
 
@@ -68,10 +67,6 @@ class MainActivity : AppCompatActivity() {
         var toolbar:Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        var list = ArrayList<Task>()
-        for(i in 0 until 100){
-            list.add(Task("Elemento"+i, LocalDate.now()))
-        }
         var rV = findViewById<RecyclerView>(R.id.recyclerView)
         var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         //val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
@@ -87,6 +82,10 @@ class MainActivity : AppCompatActivity() {
             t.duration = 500
             window.exitTransition = t
             startActivity(Intent(this, BuscadorActivity::class.java))
+        }
+        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
+            val intent = Intent(this, CreateTaskActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, 1, null)
         }
 
     }
@@ -104,8 +103,24 @@ class MainActivity : AppCompatActivity() {
     fun initLandscape(){
         setContentView(R.layout.activity_main)
         var list = ArrayList<Task>()
-        for(i in 0 until 100){
-            list.add(Task("Elemento"+i, LocalDate.now()))
+        val db = bd0.readableDatabase
+        val cursor = db.query(
+            "TASK",   // The table to query
+            null ,             // The array of columns to return (pass null to get all)
+            null,              // The columns for the WHERE clause
+            null,          // The values for the WHERE clause
+            null,                   // don't group the rows
+            null,                   // don't filter by row groups
+            null               // The sort order
+        )
+        val itemIds = mutableListOf<Long>()
+
+        with(cursor) {
+            while (moveToNext()) {
+                val itemId = columnCount
+                println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+                list.add(Task(cursor.getString(1), cursor.getString(4)))
+            }
         }
         var rV = findViewById<RecyclerView>(R.id.recyclerView)
         var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_LANDSCAPE)
@@ -121,9 +136,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(toolbar)
 
         var list = ArrayList<Task>()
-        for(i in 0 until 100){
-            list.add(Task("Elemento"+i, LocalDate.now()))
-        }
         var rV = findViewById<RecyclerView>(R.id.recyclerView)
         var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         val manager = LinearLayoutManager( // Manager en modo portrait
@@ -138,6 +150,23 @@ class MainActivity : AppCompatActivity() {
             t.duration = 500
             window.exitTransition = t
             startActivity(Intent(this, BuscadorActivity::class.java))
+        }
+    }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) { //requestCodes -> Create new = 1;
+        super.onActivityResult(requestCode, resultCode, data)
+        if (data != null) {
+            var bd = bd0.writableDatabase
+            val values = ContentValues().apply {
+                put("descripcion", data.extras["taskDescription"].toString())
+                put("beginTime", data.extras["taskBeginTime"].toString())
+                put("endTime", data.extras["taskEndTime"].toString())
+                put("date", data.extras["taskDate"].toString())
+            }
+            // Insert the new row, returning the primary key value of the new row
+            val newRowId = bd?.insert("TASK", null, values)
+            bd.close()
         }
     }
 }

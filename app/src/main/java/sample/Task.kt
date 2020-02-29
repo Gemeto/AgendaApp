@@ -12,17 +12,18 @@ class Task {
     var beginTime: LocalDateTime
     var endTime: LocalDateTime
 
-    constructor(description: String, date: LocalDate, beginTime: LocalDateTime, endTime: LocalDateTime){
+    @RequiresApi(Build.VERSION_CODES.O)
+    constructor(description: String, date: String, beginTime: LocalDateTime, endTime: LocalDateTime){
         this.description = description
-        this.date = date
+        this.date = LocalDate.parse(date)
         this.beginTime = beginTime
         this.endTime = endTime
     }
 
     @RequiresApi(Build.VERSION_CODES.O)
-    constructor(description: String, date: LocalDate){
+    constructor(description: String, date: String){
         this.description = description
-        this.date = date
+        this.date = LocalDate.parse(date)
         this.beginTime = localDateTime(date.toString(), "01:01")
         this.endTime = localDateTime(date.toString(), "01:05")
     }

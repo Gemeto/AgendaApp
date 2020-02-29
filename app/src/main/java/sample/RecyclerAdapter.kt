@@ -13,6 +13,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.RequiresApi
+import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
@@ -53,10 +54,10 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
         //4
         @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
         override fun onClick(v: View) {
-            val textView : TextInputEditText = v.findViewById(R.id.taskDescription)
-            Log.d("RecyclerView", "CLICKED " + textView.hint.toString() + " !")
-            val intent = Intent(context, CreateTaskActivity::class.java).apply { putExtra("descripcion", textView.hint.toString()) }
-            startActivity(context, intent,
+            val textView : TextView = v.findViewById(R.id.taskDescription)
+            Log.d("RecyclerView", "CLICKED " + textView.text.toString() + " !")
+            val intent = Intent(context, CreateTaskActivity::class.java).apply { putExtra("descripcion", textView.text.toString()) }
+            startActivityForResult(context as Activity, intent, 1,
                 ActivityOptions.makeSceneTransitionAnimation(context as Activity,
                     Pair(v.findViewById(R.id.bg) as View, "bgT"))
                     .toBundle())
@@ -65,7 +66,7 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
         @RequiresApi(Build.VERSION_CODES.O)
         fun bindTask(task: Task) {
             this.task = task
-            view.taskDescription.hint = task.description
+            view.taskDescription.text = task.description
             //view.taskDate.hint = task.date.toString()
             //view.taskBeginTim.hint = task.beginTime.hour.toString()+":"+task.beginTime.minute.toString()
             //view.taskEndTime.hint = task.endTime.hour.toString()+":"+task.endTime.minute.toString()

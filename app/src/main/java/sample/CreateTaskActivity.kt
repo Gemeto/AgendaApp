@@ -1,13 +1,15 @@
 package sample
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.transition.*
-import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_create_task.*
 
 class CreateTaskActivity : AppCompatActivity() {
     private val TIME24HOURS_PATTERN = "([01]?[0-9]|2[0-3]):[0-5][0-9]"
@@ -21,13 +23,11 @@ class CreateTaskActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
-        findViewById<TextView>(R.id.taskDescription).hint = intent.getStringExtra("descripcion")
+        findViewById<TextView>(R.id.taskDescription).text = intent.getStringExtra("descripcion")
         val transition:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
-        transition.duration = 1000
         window.sharedElementEnterTransition = transition
         window.sharedElementReturnTransition = transition
         val f = Explode()
-        f.duration = 1000
         window.enterTransition = f
         window.returnTransition = f
         transition.addListener(object : Transition.TransitionListener {
@@ -51,6 +51,16 @@ class CreateTaskActivity : AppCompatActivity() {
 
             }
         })
+        findViewById<Button>(R.id.createTaskButton).setOnClickListener {
+            val result = Intent()
+            result.putExtra("taskDescription", taskDescription.text.toString())
+            result.putExtra("taskDate", taskDate.text.toString())
+            result.putExtra("taskBeginTime", taskBeginTime.text.toString())
+            result.putExtra("taskEndTime", taskEndTime.text.toString())
+            setResult(Activity.RESULT_OK, result)
+            finish()
+            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)
+        }
     }
 
 }

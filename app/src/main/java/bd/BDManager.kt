@@ -7,8 +7,10 @@ import android.database.sqlite.SQLiteOpenHelper
 private const val SQL_CREATE_ENTRIES =
     "CREATE TABLE TASK (" +
             "key INTEGER PRIMARY KEY," +
-            "title TEXT," +
-            "subtitle TEXT)"
+            "descripcion TEXT," +
+            "beginTime TEXT," + //Formato: HH:MM
+            "endTime TEXT," + //Formato: HH:MM
+            "date TEXT)"//Formato: yyyy-MM-dd
 
 private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS TASK"
 
@@ -31,6 +33,6 @@ class BDManager(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME, nul
     companion object {
         // If you change the database schema, you must increment the database version.
         const val DATABASE_VERSION = 1
-        const val DATABASE_NAME = "FeedReader.db"
+        const val DATABASE_NAME = "Tasks.db"
     }
 }

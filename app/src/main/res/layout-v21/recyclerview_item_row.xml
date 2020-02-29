@@ -8,7 +8,7 @@
                                              android:layout_height="wrap_content">
 
 
-    <com.google.android.material.textfield.TextInputEditText
+    <TextView
             android:id="@+id/taskDescription"
             android:transitionName="descT"
             android:layout_width="wrap_content"
