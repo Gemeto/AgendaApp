@@ -33,50 +33,47 @@ actual object Platform {
 }
 
 class MainActivity : AppCompatActivity() {
-    var bd0:BDManager = BDManager(this)
+    private var bd0:BDManager = BDManager(this)
 
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Sample().checkMe()
 
+        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            initLandscape()
+        else
+            initPortrait()
 
-        val db = bd0.readableDatabase
-        val cursor = db.query(
-            "TASK",   // The table to query
-            null ,             // The array of columns to return (pass null to get all)
-            null,              // The columns for the WHERE clause
-            null,          // The values for the WHERE clause
-            null,                   // don't group the rows
-            null,                   // don't filter by row groups
-            null               // The sort order
-        )
-        val itemIds = mutableListOf<Long>()
+    }
 
-        var list = ArrayList<Task>()
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        super.onConfigurationChanged(newConfig)
+        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            initLandscape()
+        else
+            initPortrait()
+    }
 
-        with(cursor) {
-            while (moveToNext()) {
-                val itemId = columnCount
-                println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-                list.add(Task(cursor.getString(1), cursor.getString(4)))
-            }
-        }
+    private fun initLandscape(){
+        setContentView(R.layout.activity_main)
+        refreshList()
+        val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
+        var rV = findViewById<RecyclerView>(R.id.recyclerView)
+        rV.layoutManager = manager
+    }
 
+    private fun initPortrait(){
         setContentView(R.layout.activity_main2)
         var toolbar:Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-
         var rV = findViewById<RecyclerView>(R.id.recyclerView)
-        var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
-        //val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
         val manager = LinearLayoutManager( // Manager en modo portrait
             this, RecyclerView.VERTICAL,
             false
         )
         rV.layoutManager = manager
-        rV.adapter = adapter
-
+        refreshList()
         findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
             val t:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
             t.duration = 500
@@ -86,70 +83,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
             val intent = Intent(this, CreateTaskActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, 1, null)
-        }
-
-    }
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    override fun onConfigurationChanged(newConfig: Configuration) {
-        super.onConfigurationChanged(newConfig)
-        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
-            initLandscape()
-        else
-            initPortrait()
-    }
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun initLandscape(){
-        setContentView(R.layout.activity_main)
-        var list = ArrayList<Task>()
-        val db = bd0.readableDatabase
-        val cursor = db.query(
-            "TASK",   // The table to query
-            null ,             // The array of columns to return (pass null to get all)
-            null,              // The columns for the WHERE clause
-            null,          // The values for the WHERE clause
-            null,                   // don't group the rows
-            null,                   // don't filter by row groups
-            null               // The sort order
-        )
-        val itemIds = mutableListOf<Long>()
-
-        with(cursor) {
-            while (moveToNext()) {
-                val itemId = columnCount
-                println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
-                list.add(Task(cursor.getString(1), cursor.getString(4)))
-            }
-        }
-        var rV = findViewById<RecyclerView>(R.id.recyclerView)
-        var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_LANDSCAPE)
-        val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
-        rV.layoutManager = manager
-        rV.adapter = adapter
-    }
-
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun initPortrait(){
-        setContentView(R.layout.activity_main2)
-        var toolbar:Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
-
-        var list = ArrayList<Task>()
-        var rV = findViewById<RecyclerView>(R.id.recyclerView)
-        var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
-        val manager = LinearLayoutManager( // Manager en modo portrait
-            this, RecyclerView.VERTICAL,
-            false
-        )
-        rV.layoutManager = manager
-        rV.adapter = adapter
-
-        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
-            val t:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
-            t.duration = 500
-            window.exitTransition = t
-            startActivity(Intent(this, BuscadorActivity::class.java))
         }
     }
 
@@ -167,6 +100,31 @@ class MainActivity : AppCompatActivity() {
             // Insert the new row, returning the primary key value of the new row
             val newRowId = bd?.insert("TASK", null, values)
             bd.close()
+
+            refreshList()
         }
+    }
+
+    private fun refreshList(){
+        var list = ArrayList<Task>()
+        val db = bd0.readableDatabase
+        val cursor = db.query(
+            "TASK",   // The table to query
+            null ,             // The array of columns to return (pass null to get all)
+            null,              // The columns for the WHERE clause
+            null,          // The values for the WHERE clause
+            null,                   // don't group the rows
+            null,                   // don't filter by row groups
+            null               // The sort order
+        )
+        with(cursor) {
+            while (moveToNext()) {
+                list.add(Task(cursor.getString(1), cursor.getString(4)))
+            }
+        }
+
+        var rV = findViewById<RecyclerView>(R.id.recyclerView)
+        var adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = adapter
     }
 }

@@ -13,7 +13,7 @@ android {
     compileSdkVersion 28
     defaultConfig {
         applicationId 'org.jetbrains.kotlin.mpp_app_android'
-        minSdkVersion 15
+        minSdkVersion 24
         targetSdkVersion 28
         versionCode 1
         versionName '1.0'
@@ -29,7 +29,7 @@ android {
 dependencies {
     def coordinatorlayout_version = "1.0.0"
     implementation "androidx.coordinatorlayout:coordinatorlayout:$coordinatorlayout_version"
-    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:design:28.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])

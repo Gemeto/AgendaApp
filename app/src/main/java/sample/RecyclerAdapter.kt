@@ -25,7 +25,6 @@ import kotlinx.android.synthetic.main.activity_main.view.*
 
 class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
 
-    @RequiresApi(Build.VERSION_CODES.O)
     override fun onBindViewHolder(holder: TasksHolder, position: Int) {
         val itemTask = tasks[position]
         holder.bindTask(itemTask)
@@ -52,7 +51,6 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
         }
 
         //4
-        @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
         override fun onClick(v: View) {
             val textView : TextView = v.findViewById(R.id.taskDescription)
             Log.d("RecyclerView", "CLICKED " + textView.text.toString() + " !")
@@ -63,7 +61,6 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
                     .toBundle())
         }
 
-        @RequiresApi(Build.VERSION_CODES.O)
         fun bindTask(task: Task) {
             this.task = task
             view.taskDescription.text = task.description
