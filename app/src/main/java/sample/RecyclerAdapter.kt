@@ -54,8 +54,8 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
         override fun onClick(v: View) {
             val textView : TextView = v.findViewById(R.id.taskDescription)
             Log.d("RecyclerView", "CLICKED " + textView.text.toString() + " !")
-            val intent = Intent(context, CreateTaskActivity::class.java).apply { putExtra("descripcion", textView.text.toString()) }
-            startActivityForResult(context as Activity, intent, 1,
+            val intent = Intent(context, CreateTaskActivity::class.java).apply { putExtra("descripcion", textView.text.toString()); putExtra("taskId", task?.id) }
+            startActivityForResult(context as Activity, intent, RequestCode().modify_task,
                 ActivityOptions.makeSceneTransitionAnimation(context as Activity,
                     Pair(v.findViewById(R.id.bg) as View, "bgT"))
                     .toBundle())

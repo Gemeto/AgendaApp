@@ -1177,6 +1177,7 @@ id forever
 id ghost_view
 id gone
 id group_divider
+id header
 id home
 id homeAsUp
 id icon
@@ -1223,6 +1224,13 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id recyclerViewFr
+id recyclerViewMo
+id recyclerViewSa
+id recyclerViewSu
+id recyclerViewTh
+id recyclerViewTu
+id recyclerViewWe
 id right
 id right_icon
 id right_side
