@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 import bd.BDManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.collections.ArrayList
 
 
@@ -82,6 +83,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun initLandscape(){
         setContentView(R.layout.activity_main)
+        var calendar = Calendar.getInstance()
+        this.week.text = calendar.get(Calendar.DAY_OF_MONTH).toString() + " - " + (calendar.get(Calendar.MONTH)+1) + " - " + calendar.get(Calendar.YEAR)
         refreshLandscapeLists()
     }
 
@@ -146,38 +149,49 @@ class MainActivity : AppCompatActivity() {
             null,
             null
         )
+        var mondayOfThisWeek:Calendar = Calendar.getInstance()
+        var sundayOfThisWeek:Calendar = Calendar.getInstance()
+        mondayOfThisWeek.firstDayOfWeek = Calendar.MONDAY
+        sundayOfThisWeek.firstDayOfWeek = Calendar.MONDAY
+        mondayOfThisWeek.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
+        sundayOfThisWeek.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
+        mondayOfThisWeek.set(Calendar.HOUR_OF_DAY, 0);mondayOfThisWeek.set(Calendar.MINUTE, 0);
+        mondayOfThisWeek.set(Calendar.SECOND, 0);mondayOfThisWeek.set(Calendar.MILLISECOND, 0)
+        sundayOfThisWeek.set(Calendar.HOUR_OF_DAY, 23);sundayOfThisWeek.set(Calendar.MINUTE, 59)
+        sundayOfThisWeek.set(Calendar.SECOND, 59);sundayOfThisWeek.set(Calendar.MILLISECOND, 999)
+        println(sundayOfThisWeek.time.toString())
         with(cursor) {
             while (moveToNext()) {
-                var task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4))
-                var calendar:Calendar = Calendar.getInstance()
-                calendar.time = task.date
-                when(calendar.get(Calendar.DAY_OF_WEEK)) {
-                    Calendar.MONDAY -> list[0].add(task)
-                    Calendar.TUESDAY -> list[1].add(task)
-                    Calendar.WEDNESDAY -> list[2].add(task)
-                    Calendar.THURSDAY -> list[3].add(task)
-                    Calendar.FRIDAY -> list[4].add(task)
-                    Calendar.SATURDAY -> list[5].add(task)
-                    Calendar.SUNDAY -> list[6].add(task)
+                var task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
+                var calendar2:Calendar = Calendar.getInstance()
+                calendar2.time = task.date
+                if(calendar2 in mondayOfThisWeek..sundayOfThisWeek)
+                    when(calendar2.get(Calendar.DAY_OF_WEEK)) {
+                        Calendar.MONDAY -> list[0].add(task)
+                        Calendar.TUESDAY -> list[1].add(task)
+                        Calendar.WEDNESDAY -> list[2].add(task)
+                        Calendar.THURSDAY -> list[3].add(task)
+                        Calendar.FRIDAY -> list[4].add(task)
+                        Calendar.SATURDAY -> list[5].add(task)
+                        Calendar.SUNDAY -> list[6].add(task)
 
-                }
+                    }
             }
         }
-
         var rV = findViewById<RecyclerView>(R.id.recyclerViewMo)
-        rV.adapter = RecyclerAdapter(list[0], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[0], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewTu)
-        rV.adapter = RecyclerAdapter(list[1], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[1], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewWe)
-        rV.adapter = RecyclerAdapter(list[2], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[2], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewTh)
-        rV.adapter = RecyclerAdapter(list[3], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[3], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewFr)
-        rV.adapter = RecyclerAdapter(list[4], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[4], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewSa)
-        rV.adapter = RecyclerAdapter(list[5], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[5], Configuration.ORIENTATION_LANDSCAPE)
         rV = findViewById<RecyclerView>(R.id.recyclerViewSu)
-        rV.adapter = RecyclerAdapter(list[6], Configuration.ORIENTATION_PORTRAIT)
+        rV.adapter = RecyclerAdapter(list[6], Configuration.ORIENTATION_LANDSCAPE)
     }
 
     private fun pickImageFromGallery() {

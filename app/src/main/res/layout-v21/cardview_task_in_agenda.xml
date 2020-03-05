@@ -1,29 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:layout_centerInParent="true"
-              android:orientation="horizontal"
-        android:id="@+id/bg"
-        android:transitionName="bgT">
-
-    <!-- A CardView that contains a TextView -->
-    <androidx.cardview.widget.CardView
+    <com.google.android.material.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/card_view"
+            android:id="@+id/bg"
+            android:transitionName="bgT"
             android:layout_gravity="center"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            card_view:cardCornerRadius="4dp">
+            card_view:cardCornerRadius="20dp"
+        >
 
-        <TextView
-                android:id="@+id/taskDescription"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:transitionName="descT"
-                android:textSize="20dp"
-                android:clickable="false"
-                />
-    </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/tools"
+                >
 
-</LinearLayout>
+            <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0, 1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                <TextView
+                        android:id="@+id/taskDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:transitionName="dateT"
+                        android:textSize="20dp"
+                        android:clickable="false"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+                <TextView
+                        android:id="@+id/taskDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:transitionName="descT"
+                        android:textSize="20dp"
+                        android:clickable="false"
+                        app:layout_constraintTop_toTopOf="parent"
+                        />
+
+                <TableRow>
+                    <TextView
+                            android:id="@+id/taskBeginTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:transitionName="begintT"
+                            android:textSize="20dp"
+                            android:clickable="false"
+                            android:layout_column="0"
+                            />
+
+                    <TextView
+                            android:id="@+id/taskEndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:transitionName="endtT"
+                            android:textSize="20dp"
+                            android:clickable="false"
+                            android:layout_column="1"
+                            />
+                </TableRow>
+            </TableLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>

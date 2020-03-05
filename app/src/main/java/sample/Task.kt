@@ -1,10 +1,6 @@
 package sample
 
-import android.os.Build
-import androidx.annotation.RequiresApi
 import java.text.SimpleDateFormat
-import java.time.LocalDate
-import java.time.LocalDateTime
 import java.util.*
 
 class Task {
@@ -16,12 +12,12 @@ class Task {
     var format = SimpleDateFormat("yyyy-MM-dd")
     var formatTime = SimpleDateFormat("yyyy-MM-dd HH:mm")
 
-    constructor(id: String, description: String, date: Date, beginTime: Date, endTime: Date){
+    constructor(id: String, description: String, date: String, beginTime: String, endTime: String){
         this.id = id
         this.description = description
-        this.date = date
-        this.beginTime = beginTime
-        this.endTime = endTime
+        this.date = format.parse(date)
+        this.beginTime = formatTime.parse("$date $beginTime")
+        this.endTime = formatTime.parse("$date $endTime")
     }
 
     constructor(id:String, description: String, date: String){

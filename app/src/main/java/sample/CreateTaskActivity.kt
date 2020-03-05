@@ -8,8 +8,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_create_task.*
-import java.time.DayOfWeek
-import java.util.*
 
 class CreateTaskActivity : AppCompatActivity() {
     //private var TIME24HOURS_PATTERN = "([01]?[0-9]|2[0-3]):[0-5][0-9]"
@@ -22,8 +20,12 @@ class CreateTaskActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
-        if(intent.getStringExtra("requestCode") == RequestCode().modify_task.toString())
+        if(intent.getStringExtra("requestCode") == RequestCode().modify_task.toString()) {
             findViewById<TextView>(R.id.taskDescription).text = intent.getStringExtra("descripcion")
+            findViewById<TextView>(R.id.taskDate).text = intent.getStringExtra("date")
+            findViewById<TextView>(R.id.taskBeginTime).text = intent.getStringExtra("beginTime")
+            findViewById<TextView>(R.id.taskEndTime).text = intent.getStringExtra("endTime")
+        }
         val transition:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
         window.sharedElementEnterTransition = transition
         window.sharedElementReturnTransition = transition

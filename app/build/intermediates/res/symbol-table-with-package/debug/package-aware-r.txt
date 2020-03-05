@@ -1130,7 +1130,6 @@ id boton
 id bottom
 id buscador
 id buttonPanel
-id card_view
 id center
 id center_horizontal
 id center_vertical
@@ -1278,6 +1277,7 @@ id stretch
 id submenuarrow
 id submit_area
 id tabMode
+id table
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
 id tag_accessibility_heading
@@ -1286,7 +1286,6 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
-id taskBeginTim
 id taskBeginTime
 id taskDate
 id taskDescription
@@ -1320,6 +1319,7 @@ id up
 id useLogo
 id view_offset_helper
 id visible
+id week
 id withText
 id wrap
 id wrap_content
