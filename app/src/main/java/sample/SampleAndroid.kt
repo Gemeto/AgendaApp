@@ -4,11 +4,9 @@ import android.app.Activity
 import android.content.ContentValues
 import android.content.Intent
 import android.content.res.Configuration
-import android.os.Build
 import android.os.Bundle
 import android.transition.*
 import android.widget.ImageView
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
 import androidx.core.app.ActivityCompat
@@ -18,6 +16,9 @@ import bd.BDManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.collections.ArrayList
+import android.view.MotionEvent
+
+
 
 
 actual class Sample {
@@ -30,11 +31,33 @@ actual object Platform {
 
 class MainActivity : AppCompatActivity() {
     private var bdHelper:BDManager = BDManager(this)
+    private var x1: Float = 0.toFloat()
+    var x2: Float = 0.toFloat()
+    val MIN_DISTANCE = 150
+    lateinit var date: Calendar
 
-    @RequiresApi(Build.VERSION_CODES.O)
+    override fun onTouchEvent(event: MotionEvent): Boolean {
+        when (event.action) {
+            MotionEvent.ACTION_DOWN -> x1 = event.x
+            MotionEvent.ACTION_UP -> {
+                x2 = event.x
+                val deltaX = x2 - x1
+                if (deltaX > MIN_DISTANCE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                    date = DateUtils.pastWeek(date)
+                    refreshLandscapeLists()
+                } else if (deltaX < MIN_DISTANCE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                    date = DateUtils.nextWeek(date)
+                    refreshLandscapeLists()
+                }
+            }
+        }
+        return super.onTouchEvent(event)
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Sample().checkMe()
+        date = Calendar.getInstance()
         if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
             initLandscape()
         else
@@ -83,8 +106,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun initLandscape(){
         setContentView(R.layout.activity_main)
-        var calendar = Calendar.getInstance()
-        this.week.text = calendar.get(Calendar.DAY_OF_MONTH).toString() + " - " + (calendar.get(Calendar.MONTH)+1) + " - " + calendar.get(Calendar.YEAR)
         refreshLandscapeLists()
     }
 
@@ -140,10 +161,9 @@ class MainActivity : AppCompatActivity() {
             list.add(ArrayList<Task>())
         }
         val db = bdHelper.readableDatabase
-
-        var monday = DateUtils.firstDayOfTheWeek(Calendar.getInstance())
-        var sunday = DateUtils.lastDayOfTheWeek(Calendar.getInstance())
-        println(monday+" "+sunday)
+        var monday = DateUtils.firstDayOfTheWeek(date)
+        var sunday = DateUtils.lastDayOfTheWeek(date)
+        this.week.text = "$monday $sunday"
         val cursor = db.query(
             "TASK",
             null ,
@@ -157,19 +177,18 @@ class MainActivity : AppCompatActivity() {
             while (moveToNext()) {
                 var task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
                 println(cursor.getString(4))
-                var calendar2:Calendar = Calendar.getInstance()
-                calendar2.time = task.date
-                //if(calendar2 in mondayOfThisWeek..sundayOfThisWeek)
-                    when(calendar2.get(Calendar.DAY_OF_WEEK)) {
-                        Calendar.MONDAY -> list[0].add(task)
-                        Calendar.TUESDAY -> list[1].add(task)
-                        Calendar.WEDNESDAY -> list[2].add(task)
-                        Calendar.THURSDAY -> list[3].add(task)
-                        Calendar.FRIDAY -> list[4].add(task)
-                        Calendar.SATURDAY -> list[5].add(task)
-                        Calendar.SUNDAY -> list[6].add(task)
+                var calendar:Calendar = Calendar.getInstance()
+                calendar.time = task.date
+                when(calendar.get(Calendar.DAY_OF_WEEK)) {
+                    Calendar.MONDAY -> list[0].add(task)
+                    Calendar.TUESDAY -> list[1].add(task)
+                    Calendar.WEDNESDAY -> list[2].add(task)
+                    Calendar.THURSDAY -> list[3].add(task)
+                    Calendar.FRIDAY -> list[4].add(task)
+                    Calendar.SATURDAY -> list[5].add(task)
+                    Calendar.SUNDAY -> list[6].add(task)
 
-                    }
+                }
             }
         }
         var rV = findViewById<RecyclerView>(R.id.recyclerViewMo)
