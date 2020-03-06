@@ -140,32 +140,26 @@ class MainActivity : AppCompatActivity() {
             list.add(ArrayList<Task>())
         }
         val db = bdHelper.readableDatabase
+
+        var monday = DateUtils.firstDayOfTheWeek(Calendar.getInstance())
+        var sunday = DateUtils.lastDayOfTheWeek(Calendar.getInstance())
+        println(monday+" "+sunday)
         val cursor = db.query(
             "TASK",
             null ,
+            "date BETWEEN '$monday' AND '$sunday'",
             null,
             null,
             null,
-            null,
-            null
+            "date DESC"
         )
-        var mondayOfThisWeek:Calendar = Calendar.getInstance()
-        var sundayOfThisWeek:Calendar = Calendar.getInstance()
-        mondayOfThisWeek.firstDayOfWeek = Calendar.MONDAY
-        sundayOfThisWeek.firstDayOfWeek = Calendar.MONDAY
-        mondayOfThisWeek.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
-        sundayOfThisWeek.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
-        mondayOfThisWeek.set(Calendar.HOUR_OF_DAY, 0);mondayOfThisWeek.set(Calendar.MINUTE, 0);
-        mondayOfThisWeek.set(Calendar.SECOND, 0);mondayOfThisWeek.set(Calendar.MILLISECOND, 0)
-        sundayOfThisWeek.set(Calendar.HOUR_OF_DAY, 23);sundayOfThisWeek.set(Calendar.MINUTE, 59)
-        sundayOfThisWeek.set(Calendar.SECOND, 59);sundayOfThisWeek.set(Calendar.MILLISECOND, 999)
-        println(sundayOfThisWeek.time.toString())
         with(cursor) {
             while (moveToNext()) {
                 var task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
+                println(cursor.getString(4))
                 var calendar2:Calendar = Calendar.getInstance()
                 calendar2.time = task.date
-                if(calendar2 in mondayOfThisWeek..sundayOfThisWeek)
+                //if(calendar2 in mondayOfThisWeek..sundayOfThisWeek)
                     when(calendar2.get(Calendar.DAY_OF_WEEK)) {
                         Calendar.MONDAY -> list[0].add(task)
                         Calendar.TUESDAY -> list[1].add(task)
