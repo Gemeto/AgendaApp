@@ -35,7 +35,7 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
     override fun getItemCount() = tasks.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksHolder {
-        val layout = if (orientation == Configuration.ORIENTATION_LANDSCAPE) R.layout.cardview_task_in_agenda else R.layout.recyclerview_item_row
+        val layout = if (orientation == Configuration.ORIENTATION_LANDSCAPE) R.layout.cardview_task_in_agenda else R.layout.cardview_task_in_agenda
         val inflatedView = LayoutInflater.from(parent.context).inflate(layout, parent, false)
         return TasksHolder(inflatedView, parent.context)
     }

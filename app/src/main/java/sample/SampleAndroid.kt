@@ -1,9 +1,15 @@
 package sample
 
+import receivers.AlarmReceiver
 import android.app.Activity
+import android.app.AlarmManager
+import android.app.PendingIntent
 import android.content.ContentValues
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.content.res.Configuration
+import android.net.Uri
 import android.os.Bundle
 import android.transition.*
 import android.widget.ImageView
@@ -17,9 +23,7 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.collections.ArrayList
 import android.view.MotionEvent
-
-
-
+import kotlinx.android.synthetic.main.activity_main2.*
 
 actual class Sample {
     actual fun checkMe() = 44
@@ -29,11 +33,50 @@ actual object Platform {
     actual val name: String = "Android"
 }
 
+object AppPreferences{
+    private const val NAME = "SpinKotlin"
+    private const val MODE = Context.MODE_PRIVATE
+    private lateinit var preferences: SharedPreferences
+    // list of app specific preferences
+    private val ALARMTIME = Pair("alarmTime", 0.toLong())
+    private val IMGPORTADA = Pair("imgPortada", "")
+
+    fun init(context: Context) {
+        preferences = context.getSharedPreferences(NAME, MODE)
+    }
+
+    /**
+     * SharedPreferences extension function, so we won't need to call edit() and apply()
+     * ourselves on every SharedPreferences operation.
+     */
+    private inline fun SharedPreferences.edit(operation: (SharedPreferences.Editor) -> Unit) {
+        val editor = edit()
+        operation(editor)
+        editor.apply()
+    }
+
+    var alarmTime: Long
+        // custom getter to get a preference of a desired type, with a predefined default value
+        get() = preferences.getLong(ALARMTIME.first, ALARMTIME.second)
+        // custom setter to save a preference back to preferences file
+        set(value) = preferences.edit {
+            it.putLong(ALARMTIME.first, value)
+        }
+
+    var imgPortada: String
+
+        get() = preferences.getString(IMGPORTADA.first, IMGPORTADA.second)
+
+        set(value) = preferences.edit{
+            it.putString(IMGPORTADA.first, value)
+        }
+}
+
 class MainActivity : AppCompatActivity() {
     private var bdHelper:BDManager = BDManager(this)
+    private val MIN_DISTANCE_TO_SLIDE = 150
     private var x1: Float = 0.toFloat()
     var x2: Float = 0.toFloat()
-    val MIN_DISTANCE = 150
     lateinit var date: Calendar
 
     override fun onTouchEvent(event: MotionEvent): Boolean {
@@ -42,10 +85,10 @@ class MainActivity : AppCompatActivity() {
             MotionEvent.ACTION_UP -> {
                 x2 = event.x
                 val deltaX = x2 - x1
-                if (deltaX > MIN_DISTANCE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                if (deltaX > MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     date = DateUtils.pastWeek(date)
                     refreshLandscapeLists()
-                } else if (deltaX < MIN_DISTANCE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                } else if (deltaX < MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     date = DateUtils.nextWeek(date)
                     refreshLandscapeLists()
                 }
@@ -57,6 +100,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         Sample().checkMe()
+        AppPreferences.init(this)
         date = Calendar.getInstance()
         if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
             initLandscape()
@@ -80,6 +124,10 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
+            if(requestCode == RequestCode().select_image) {
+                AppPreferences.imgPortada = data?.data.toString()
+                img.setImageURI(data?.data)
+            }else{
             val bd = bdHelper.writableDatabase
             //Creamos un contenido de valores con los datos de la tarea
             val values = ContentValues().apply {
@@ -100,6 +148,7 @@ class MainActivity : AppCompatActivity() {
                 refreshLandscapeLists()
             else
                 refreshPortraitList()
+                }
         }
 
     }
@@ -111,6 +160,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initPortrait(){
         setContentView(R.layout.activity_main2)
+        img.setImageURI(Uri.parse(AppPreferences.imgPortada))
         val toolbar:Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         refreshPortraitList()

@@ -1,6 +1,9 @@
 package sample
 
 import android.app.Activity
+import android.app.AlarmManager
+import android.app.PendingIntent
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.transition.*
@@ -8,6 +11,8 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_create_task.*
+import receivers.AlarmReceiver
+import java.util.*
 
 class CreateTaskActivity : AppCompatActivity() {
     //private var TIME24HOURS_PATTERN = "([01]?[0-9]|2[0-3]):[0-5][0-9]"
@@ -54,6 +59,30 @@ class CreateTaskActivity : AppCompatActivity() {
             }
         })
         findViewById<Button>(R.id.createTaskButton).setOnClickListener {
+            AppPreferences.init(this)
+            //for(mov in preferences.all){
+            val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
+            val task = Task("0", taskDescription.text.toString(), taskDate.text.toString(), taskBeginTime.text.toString(), taskEndTime.text.toString())
+            val alarmTimeAtUTC = task.beginTime.time
+            var pending = PendingIntent.getBroadcast(
+                applicationContext,
+                0,
+                Intent(applicationContext, AlarmReceiver::class.java).apply {
+                    putExtra("KEY_FOO_STRING", "Medium AlarmManager Demo")
+                    this.action = "FOO_ACTION"
+                },
+                0
+            )
+            alarmManager.setAlarmClock(
+                AlarmManager.AlarmClockInfo(
+                    alarmTimeAtUTC,
+                    //Calendar.getInstance().apply { set(Calendar.HOUR_OF_DAY, 11) set(Calendar.MINUTE, 40) set(Calendar.SECOND, 0) }.timeInMillis,
+                    pending),
+                pending
+            )
+            AppPreferences.alarmTime = alarmTimeAtUTC
+            //}
+
             val result = Intent()
             result.putExtra("taskId", intent.getStringExtra("taskId"))
             result.putExtra("taskDescription", taskDescription.text.toString())
