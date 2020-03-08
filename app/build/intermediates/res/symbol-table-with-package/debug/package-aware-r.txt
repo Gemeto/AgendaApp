@@ -1130,6 +1130,7 @@ id boton
 id bottom
 id buscador
 id buttonPanel
+id cardBg
 id center
 id center_horizontal
 id center_vertical

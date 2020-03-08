@@ -39,7 +39,7 @@ object AppPreferences{
     private lateinit var preferences: SharedPreferences
     // list of app specific preferences
     private val ALARMTIME = Pair("alarmTime", 0.toLong())
-    private val IMGPORTADA = Pair("imgPortada", "")
+    private val DESC = Pair("descripcion", "")
 
     fun init(context: Context) {
         preferences = context.getSharedPreferences(NAME, MODE)
@@ -63,12 +63,12 @@ object AppPreferences{
             it.putLong(ALARMTIME.first, value)
         }
 
-    var imgPortada: String
+    var descripcion: String
 
-        get() = preferences.getString(IMGPORTADA.first, IMGPORTADA.second)
+        get() = preferences.getString(DESC.first, DESC.second)
 
         set(value) = preferences.edit{
-            it.putString(IMGPORTADA.first, value)
+            it.putString(DESC.first, value)
         }
 }
 

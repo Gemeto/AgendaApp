@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Mar 08 02:53:38 CET 2020
+#Sun Mar 08 03:59:59 CET 2020
 2.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 0.path=classes.dex
 count=3

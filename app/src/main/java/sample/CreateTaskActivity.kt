@@ -89,6 +89,7 @@ class CreateTaskActivity : AppCompatActivity() {
                     pending
                 )
                 AppPreferences.alarmTime = alarmTimeAtUTC
+                AppPreferences.descripcion = task.description
                 //}
 
                 val result = Intent()

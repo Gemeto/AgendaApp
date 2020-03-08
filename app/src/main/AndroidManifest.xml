@@ -30,6 +30,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="sample.ADialogActivity" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <receiver android:name="receivers.AlarmReceiver" android:enabled="true" android:exported="true">
 
         </receiver>
