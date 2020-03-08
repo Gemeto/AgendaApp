@@ -1540,10 +1540,6 @@
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\a51c8891f56c2d52218edf8fce0996c4\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_recyclerview_item_row.xml.flat",
-        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\layout-v21\\recyclerview_item_row.xml"
-    },
-    {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },

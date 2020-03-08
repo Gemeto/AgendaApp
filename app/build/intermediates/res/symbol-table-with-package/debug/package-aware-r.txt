@@ -1254,7 +1254,6 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
-id separatorLine
 id shortcut
 id showCustom
 id showHome
@@ -1405,7 +1404,6 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout recyclerview_item_row
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

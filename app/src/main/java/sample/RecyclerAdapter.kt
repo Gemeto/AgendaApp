@@ -5,22 +5,15 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
-import android.os.Build
 import android.util.Log
 import android.util.Pair
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
-import androidx.annotation.RequiresApi
 import androidx.core.app.ActivityCompat.startActivityForResult
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.recyclerview_item_row.view.*
-import androidx.core.content.ContextCompat.startActivity
-import androidx.transition.*
-import com.google.android.material.textfield.TextInputEditText
-import kotlinx.android.synthetic.main.activity_main.view.*
+import kotlinx.android.synthetic.main.cardview_task_in_agenda.view.*
 import java.util.*
 import kotlin.collections.ArrayList
 

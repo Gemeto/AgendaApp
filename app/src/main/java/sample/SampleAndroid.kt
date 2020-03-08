@@ -125,7 +125,7 @@ class MainActivity : AppCompatActivity() {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
             if(requestCode == RequestCode().select_image) {
-                AppPreferences.imgPortada = data?.data.toString()
+                //AppPreferences.imgPortada = data?.data
                 img.setImageURI(data?.data)
             }else{
             val bd = bdHelper.writableDatabase
@@ -160,7 +160,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun initPortrait(){
         setContentView(R.layout.activity_main2)
-        img.setImageURI(Uri.parse(AppPreferences.imgPortada))
+        //img.setImageURI(Uri.parse(AppPreferences.imgPortada))
         val toolbar:Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
         refreshPortraitList()
@@ -258,7 +258,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun pickImageFromGallery() {
-        val intent = Intent(Intent.ACTION_PICK)
+        val intent = Intent(Intent.ACTION_GET_CONTENT)
         intent.type = "image/*"//RUTA DE IMAGENES EN ANDROID
         startActivityForResult(intent, RequestCode().select_image)
     }
