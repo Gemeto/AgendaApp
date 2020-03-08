@@ -18,9 +18,6 @@ class AlarmReceiver : BroadcastReceiver() {
             var i = Intent(context, ADialogActivity::class.java)
             i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(context, i, null)
-            val notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION)//Tono de la alarma
-            val r = RingtoneManager.getRingtone(context, notification)
-            r.play()
         }
     }
 }

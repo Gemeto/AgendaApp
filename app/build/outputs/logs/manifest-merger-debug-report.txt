@@ -121,10 +121,14 @@ ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManife
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:26:19-57
 activity#sample.ADialogActivity
 ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:9-37:20
+	android:turnScreenOn
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:89-116
+	android:showOnLockScreen
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:57-88
 	android:configChanges
-		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:98-159
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:158-219
 	android:theme
-		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:57-97
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:117-157
 	android:name
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:19-56
 intent-filter#category:name:android.intent.category.LAUNCHER
