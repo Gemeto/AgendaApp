@@ -1,5 +1,6 @@
 package sample
 
+import activities.CreateTaskActivity
 import android.app.Activity
 import android.app.ActivityOptions
 import android.content.Context
@@ -70,12 +71,15 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
             this.task = task
             view.taskDescription.text = task.description
             var calendar = Calendar.getInstance(); calendar.time = task.date
-            view.taskDate.text = calendar.get(Calendar.YEAR).toString() + "-" + (calendar.get(Calendar.MONTH)+1) + "-" + calendar.get(Calendar.DAY_OF_MONTH)
+            view.taskDate.text = calendar.get(Calendar.YEAR).toString().padStart(4, '0') + "-" +
+                    (calendar.get(Calendar.MONTH)+1).toString().padStart(2, '0') + "-" +
+                    calendar.get(Calendar.DAY_OF_MONTH).toString().padStart(2, '0')
             var beginTime = Calendar.getInstance()
             beginTime.time = task.beginTime
-            view.taskBeginTime.text = beginTime.get(Calendar.HOUR_OF_DAY).toString() + ":" + beginTime.get(Calendar.MINUTE).toString()
+            view.taskBeginTime.text = beginTime.get(Calendar.HOUR_OF_DAY).toString().padStart(2, '0') + ":" + beginTime.get(Calendar.MINUTE).toString().padStart(2, '0')
             var endTime = Calendar.getInstance()
             endTime.time = task.endTime
-            view.taskEndTime.text = endTime.get(Calendar.HOUR_OF_DAY).toString() + ":" + endTime.get(Calendar.MINUTE).toString()        }
+            view.taskEndTime.text = endTime.get(Calendar.HOUR_OF_DAY).toString().padStart(2, '0') + ":" + endTime.get(Calendar.MINUTE).toString().toString().padStart(2, '0')
+        }
     }
 }

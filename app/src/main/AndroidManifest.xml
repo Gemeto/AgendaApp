@@ -16,21 +16,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="sample.CreateTaskActivity" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize|keyboardHidden">
+        <activity android:name="activities.CreateTaskActivity" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="sample.BuscadorActivity" android:theme="@style/Theme.MaterialComponents">
+        <activity android:name="activities.BuscadorActivity" android:theme="@style/Theme.MaterialComponents">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="sample.ADialogActivity" android:showOnLockScreen="true" android:turnScreenOn="true" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize|keyboardHidden">
+        <activity android:name="activities.ADialogActivity" android:showOnLockScreen="true" android:turnScreenOn="true" android:theme="@style/Theme.Transparent">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

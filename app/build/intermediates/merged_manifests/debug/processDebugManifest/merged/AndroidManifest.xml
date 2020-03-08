@@ -17,7 +17,6 @@
         android:debuggable="true"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name="sample.MainActivity"
@@ -29,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="sample.CreateTaskActivity"
+            android:name="activities.CreateTaskActivity"
             android:configChanges="orientation|screenSize|keyboardHidden"
             android:theme="@style/Theme.Transparent" >
             <intent-filter>
@@ -39,7 +38,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="sample.BuscadorActivity"
+            android:name="activities.BuscadorActivity"
             android:theme="@style/Theme.MaterialComponents" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -48,8 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="sample.ADialogActivity"
-            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:name="activities.ADialogActivity"
             android:showOnLockScreen="true"
             android:theme="@style/Theme.Transparent"
             android:turnScreenOn="true" >
