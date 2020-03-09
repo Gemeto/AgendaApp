@@ -40,6 +40,7 @@ object AppPreferences{
     // list of app specific preferences
     private val ALARMTIME = Pair("alarmTime", 0.toLong())
     private val DESC = Pair("descripcion", "")
+    private val ID = Pair("id", "")
 
     fun init(context: Context) {
         preferences = context.getSharedPreferences(NAME, MODE)
@@ -61,6 +62,14 @@ object AppPreferences{
         // custom setter to save a preference back to preferences file
         set(value) = preferences.edit {
             it.putLong(ALARMTIME.first, value)
+        }
+
+    var id: String
+
+        get() = preferences.getString(ID.first, ID.second) as String
+
+        set(value) = preferences.edit{
+            it.putString(ID.first, value)
         }
 
     var descripcion: String

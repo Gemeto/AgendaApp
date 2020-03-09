@@ -1119,6 +1119,7 @@ id addTask
 id alertTitle
 id all
 id always
+id apBtn
 id appBarLayout
 id async
 id auto
@@ -1177,6 +1178,7 @@ id forever
 id ghost_view
 id gone
 id group_divider
+id guideline
 id header
 id home
 id homeAsUp
@@ -1231,6 +1233,7 @@ id recyclerViewSu
 id recyclerViewTh
 id recyclerViewTu
 id recyclerViewWe
+id repBtn
 id right
 id right_icon
 id right_side
@@ -1380,6 +1383,7 @@ layout abc_tooltip
 layout activity_create_task
 layout activity_main
 layout activity_main2
+layout alarm_popup
 layout buscador
 layout cardview_task_in_agenda
 layout custom_dialog
