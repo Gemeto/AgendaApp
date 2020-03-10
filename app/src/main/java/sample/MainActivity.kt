@@ -2,6 +2,7 @@ package sample
 
 import activities.BuscadorActivity
 import activities.CreateTaskActivity
+import adapters.RecyclerAdapter
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.ContentValues
@@ -11,19 +12,16 @@ import android.content.SharedPreferences
 import android.content.res.Configuration
 import android.os.Bundle
 import android.transition.*
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.widget.Toolbar
 import androidx.core.app.ActivityCompat
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
 import bd.BDManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.collections.ArrayList
 import android.view.MotionEvent
 import android.widget.TextView
-import kotlinx.android.synthetic.main.activity_main2.*
+import androidx.recyclerview.widget.GridLayoutManager
 
 actual class Sample {
     actual fun checkMe() = 44
@@ -134,35 +132,29 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
-            if(requestCode == RequestCode().select_image) {
-                //AppPreferences.imgPortada = data?.data
-                img.setImageURI(data.data)
-            }else{
-            val bd = bdHelper.writableDatabase
-            //Creamos un contenido de valores con los datos de la tarea
-            val values = ContentValues().apply {
-                put("descripcion", ((data.extras as Bundle)["taskDescription"] as Any).toString())
-                put("beginTime", ((data.extras as Bundle)["taskBeginTime"] as Any).toString())
-                put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
-                put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
-            }
-            if (requestCode == RequestCode().create_task) {
-                // Insertamos la tarea en la base de datos
-                bd?.insert("TASK", null, values)
-            } else if (requestCode == RequestCode().modify_task) {
-                // Modificamos la tarea en la base de datos
-                bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
-            }
-            bd.close()
-            if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
-                refreshLandscapeLists()
-            else
-                refreshPortraitList()
-
-            AlarmUtils.setNextAlarm(this, false)
-            }
+        val bd = bdHelper.writableDatabase
+        //Creamos un contenido de valores con los datos de la tarea
+        val values = ContentValues().apply {
+            put("descripcion", ((data.extras as Bundle)["taskDescription"] as Any).toString())
+            put("beginTime", ((data.extras as Bundle)["taskBeginTime"] as Any).toString())
+            put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
+            put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
         }
+        if (requestCode == RequestCode().create_task) {
+            // Insertamos la tarea en la base de datos
+            bd?.insert("TASK", null, values)
+        } else if (requestCode == RequestCode().modify_task) {
+            // Modificamos la tarea en la base de datos
+            bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
+        }
+        bd.close()
+        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            refreshLandscapeLists()
+        else
+            refreshPortraitList()
 
+        AlarmUtils.setNextAlarm(this, false)
+        }
     }
 
     private fun initLandscape(){
@@ -171,10 +163,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initPortrait(){
-        setContentView(R.layout.activity_main2)
-        //img.setImageURI(Uri.parse(AppPreferences.imgPortada))
-        val toolbar:Toolbar = findViewById(R.id.toolbar)
-        setSupportActionBar(toolbar)
+        setContentView(R.layout.activity_main)
         refreshPortraitList()
         //CLICK SEARCH BUTTON TO LOOK FOR CONCRETE TASKS
         findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
@@ -187,10 +176,6 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
             val intent = Intent(this, CreateTaskActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
-        }
-        //CLICK ON IMAGE TO SELECT OTHER
-        findViewById<ImageView>(R.id.img).setOnClickListener {
-            pickImageFromGallery()
         }
     }
 
@@ -254,25 +239,28 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         }
-        var rV = findViewById<RecyclerView>(R.id.recyclerViewMo)
-        rV.adapter = RecyclerAdapter(list[0], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewTu)
-        rV.adapter = RecyclerAdapter(list[1], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewWe)
-        rV.adapter = RecyclerAdapter(list[2], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewTh)
-        rV.adapter = RecyclerAdapter(list[3], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewFr)
-        rV.adapter = RecyclerAdapter(list[4], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewSa)
-        rV.adapter = RecyclerAdapter(list[5], Configuration.ORIENTATION_LANDSCAPE)
-        rV = findViewById<RecyclerView>(R.id.recyclerViewSu)
-        rV.adapter = RecyclerAdapter(list[6], Configuration.ORIENTATION_LANDSCAPE)
+        val rV = findViewById<RecyclerView>(R.id.recyclerView)
+        val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
+        rV.layoutManager = manager
+        rV.adapter = RecyclerAdapter(obtenerLista(list), Configuration.ORIENTATION_LANDSCAPE)
     }
 
-    private fun pickImageFromGallery() {
-        val intent = Intent(Intent.ACTION_GET_CONTENT)
-        intent.type = "image/*"//RUTA DE IMAGENES EN ANDROID
-        startActivityForResult(intent, RequestCode().select_image)
+    private fun obtenerLista(l:ArrayList<ArrayList<Task>>):ArrayList<Task> {
+        var longer = 0
+        for (i in 1 until l.size) {
+            if(l[longer].size<l[i].size)
+                longer=i
+        }
+        val array = ArrayList<Task>()
+        for(j in 0 until l[longer].size) {
+             for (i in 0 until l.size) {
+                if(l[i].size>j && l[i].size>0){
+                    array.add(l[i][j])
+                }else{
+                    array.add(Task("-1", "", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(i))))
+                }
+            }
+        }
+        return array
     }
 }

@@ -3,7 +3,6 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:id="@+id/bg"
-                                             android:background="@color/design_default_color_primary_dark"
                                              android:transitionName="bgT">
     <TableLayout
             android:layout_width="match_parent"
@@ -12,14 +11,14 @@
         <EditText
                 android:hint="Descripción, anotaciones..."
                 android:layout_width="match_parent"
-                android:layout_height="119dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:id="@+id/taskDescription"
                 android:transitionName="descT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 style="@android:style/Widget.Material.Light.EditText"/>
-        <EditText
+        <Button
                 android:hint="yyyy-MM-dd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,7 +27,7 @@
                 android:maxLines="1"
                 />
         <TableRow>
-            <EditText
+            <Button
                     android:hint="HH:MM"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -36,7 +35,7 @@
                     android:transitionName="begintT"
                     android:maxLines="1"
                     />
-            <EditText
+            <Button
                     android:hint="HH:MM"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

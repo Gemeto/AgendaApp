@@ -1120,7 +1120,6 @@ id alertTitle
 id all
 id always
 id apBtn
-id appBarLayout
 id async
 id auto
 id barrier
@@ -1142,7 +1141,6 @@ id chronometer
 id clip_horizontal
 id clip_vertical
 id collapseActionView
-id collapsingToolbar
 id container
 id content
 id contentPanel
@@ -1186,7 +1184,6 @@ id icon
 id icon_group
 id ifRoom
 id image
-id img
 id info
 id invisible
 id italic
@@ -1226,13 +1223,6 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
-id recyclerViewFr
-id recyclerViewMo
-id recyclerViewSa
-id recyclerViewSu
-id recyclerViewTh
-id recyclerViewTu
-id recyclerViewWe
 id repBtn
 id right
 id right_icon
@@ -1306,7 +1296,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside
@@ -1382,7 +1371,6 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_create_task
 layout activity_main
-layout activity_main2
 layout alarm_popup
 layout buscador
 layout cardview_task_in_agenda

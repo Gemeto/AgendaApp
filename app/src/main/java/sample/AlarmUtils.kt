@@ -5,10 +5,7 @@ import android.app.PendingIntent
 import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
-import android.text.format.DateUtils
 import android.util.Log
-import android.widget.Toast
 import bd.BDManager
 import receivers.AlarmReceiver
 import java.text.SimpleDateFormat
@@ -20,12 +17,12 @@ object AlarmUtils {
         if(booting)
             Thread.sleep(5000)
         AppPreferences.init(context)
-        var bd = BDManager(context)
+        val bd = BDManager(context)
         val db = bd.readableDatabase
-        var calendar = Calendar.getInstance()
-        var today = CalendarUtils.dateToString(calendar)
-        var hourToday = ""+calendar.get(Calendar.HOUR_OF_DAY)
-        var minuteToday = ""+calendar.get(Calendar.MINUTE)
+        val calendar = Calendar.getInstance()
+        val today = CalendarUtils.dateToString(calendar)
+        val hourToday = ""+calendar.get(Calendar.HOUR_OF_DAY)
+        val minuteToday = ""+calendar.get(Calendar.MINUTE)
         val cursor = db.query(
             "TASK",
             null ,
@@ -39,7 +36,7 @@ object AlarmUtils {
 
         with(cursor) {
             while (moveToNext()) {
-                var task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
+                val task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
                 if(cursor.getString(2).trim().split(":")[0].toInt() == hourToday.toInt()
                     && cursor.getString(2).trim().split(":")[1].toInt() < minuteToday.toInt()) {
                     bd.close()
@@ -53,7 +50,7 @@ object AlarmUtils {
                 }else {
                     val alarmManager = context.getSystemService(Context.ALARM_SERVICE) as AlarmManager
                     val alarmTimeAtUTC = task.beginTime.time
-                    var pending = PendingIntent.getBroadcast(
+                    val pending = PendingIntent.getBroadcast(
                         context,
                         0,
                         Intent(context, AlarmReceiver::class.java).apply {
@@ -83,7 +80,7 @@ object AlarmUtils {
 
     fun repeatActual(context: Context) {
         AppPreferences.init(context)
-        var bd = BDManager(context)
+        val bd = BDManager(context)
         val db = bd.writableDatabase
         val dbr = bd.readableDatabase
         val cursor = dbr.query(
@@ -96,10 +93,9 @@ object AlarmUtils {
             null
         )
         val calendar = Calendar.getInstance()
-        lateinit var values : ContentValues
         with(cursor) {
             while (moveToNext()) {
-                calendar.time = SimpleDateFormat("yyyy-MM-dd").parse(cursor.getString(4))
+                calendar.time = SimpleDateFormat("yyyy-MM-dd", Locale("Spain")).parse(cursor.getString(4))
                 db.insert("TASK", null, ContentValues().apply {
                     put("descripcion", cursor.getString(1))
                     put("beginTime", cursor.getString(2))

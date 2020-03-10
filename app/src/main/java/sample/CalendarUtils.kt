@@ -10,7 +10,7 @@ object CalendarUtils {
     }
 
     fun firstDayOfTheWeek(c0: Calendar):String{
-        var c = Calendar.getInstance()
+        val c = Calendar.getInstance()
         c.time = c0.time
         c.firstDayOfWeek = Calendar.MONDAY
         c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
@@ -20,7 +20,7 @@ object CalendarUtils {
     }
 
     fun lastDayOfTheWeek(c0: Calendar):String{
-        var c = Calendar.getInstance()
+        val c = Calendar.getInstance()
         c.time = c0.time
         c.firstDayOfWeek = Calendar.MONDAY
         c.set(Calendar.DAY_OF_WEEK, Calendar.SUNDAY)
@@ -30,7 +30,7 @@ object CalendarUtils {
     }
 
     fun nextWeek(c0: Calendar):Calendar{
-        var c = Calendar.getInstance()
+        val c = Calendar.getInstance()
         c.time = c0.time
         c.firstDayOfWeek = Calendar.MONDAY
         c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)
@@ -38,8 +38,26 @@ object CalendarUtils {
         return c
     }
 
+    fun actualWeekInDay(day: Int):Calendar{
+        val c = Calendar.getInstance()
+        c.firstDayOfWeek = Calendar.MONDAY
+        var dow = 0
+        when(day){
+            0 -> dow = Calendar.MONDAY
+            1 -> dow = Calendar.TUESDAY
+            2 -> dow = Calendar.WEDNESDAY
+            3 -> dow = Calendar.THURSDAY
+            4 -> dow = Calendar.FRIDAY
+            5 -> dow = Calendar.SATURDAY
+            6 -> dow = Calendar.SUNDAY
+
+        }
+        c.set(Calendar.DAY_OF_WEEK, dow)
+        return c
+    }
+
     fun pastWeek(c0: Calendar):Calendar{
-        var c = Calendar.getInstance()
+        val c = Calendar.getInstance()
         c.time = c0.time
         c.firstDayOfWeek = Calendar.MONDAY
         c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY)

@@ -5,7 +5,6 @@
                                                  android:layout_width="match_parent"
                                                  android:layout_height="match_parent"
                                                  android:fitsSystemWindows="true"
-                                                 android:background="@color/design_default_color_primary_dark"
                                                  tools:context="MainActivity">
 
     <TableLayout
@@ -83,67 +82,11 @@
                     />
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:stretchColumns="0,1,2,3,4,5,6"
-                >
         <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewMo"
-                android:layout_width="30dp"
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_column="0"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                 />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewTu"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="1"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewWe"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="2"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewTh"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="3"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewFr"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="4"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewSa"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="5"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-
-        <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recyclerViewSu"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_column="6"
-                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-                />
-    </TableRow>
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,8 +9,8 @@ class Task {
     var date: Date
     var beginTime: Date
     var endTime: Date
-    var format = SimpleDateFormat("yyyy-MM-dd")
-    var formatTime = SimpleDateFormat("yyyy-MM-dd HH:mm")
+    var format = SimpleDateFormat("yyyy-MM-dd", Locale("Spain"))
+    var formatTime = SimpleDateFormat("yyyy-MM-dd HH:mm", Locale("Spain"))
 
     constructor(id: String, description: String, date: String, beginTime: String, endTime: String){
         this.id = id

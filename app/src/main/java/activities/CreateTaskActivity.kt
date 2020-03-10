@@ -1,9 +1,6 @@
 package activities
 
 import android.app.Activity
-import android.app.AlarmManager
-import android.app.PendingIntent
-import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.transition.*
@@ -11,23 +8,23 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import fragments.DatePickerFragment
+import fragments.TimePickerFragment
 import kotlinx.android.synthetic.main.activity_create_task.*
-import receivers.AlarmReceiver
 import sample.*
 
-class CreateTaskActivity : AppCompatActivity() {
+class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerListener, DatePickerFragment.DatePickerListener{
     private var TIME24HOURS_PATTERN = "([01][0-9]|2[0-3]):[0-5][0-9]"
     private var DATE_PATTERN = "2[0-3][0-9][0-9]-(0[0-9]|1[0-2])-([012][0-9]|3[01])"
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
         if(intent.getStringExtra("requestCode") == RequestCode().modify_task.toString()) {
             findViewById<TextView>(R.id.taskDescription).text = intent.getStringExtra("descripcion")
-            findViewById<TextView>(R.id.taskDate).text = intent.getStringExtra("date")
-            findViewById<TextView>(R.id.taskBeginTime).text = intent.getStringExtra("beginTime")
-            findViewById<TextView>(R.id.taskEndTime).text = intent.getStringExtra("endTime")
+            findViewById<Button>(R.id.taskDate).text = intent.getStringExtra("date")
+            findViewById<Button>(R.id.taskBeginTime).text = intent.getStringExtra("beginTime")
+            findViewById<Button>(R.id.taskEndTime).text = intent.getStringExtra("endTime")
         }
         val transition:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
         window.sharedElementEnterTransition = transition
@@ -35,27 +32,34 @@ class CreateTaskActivity : AppCompatActivity() {
         val f = Explode()
         window.enterTransition = f
         window.returnTransition = f
-        transition.addListener(object : Transition.TransitionListener {
-            override fun onTransitionStart(transition: Transition) {
-
+        taskBeginTime.setOnClickListener{
+            val tPF = TimePickerFragment()
+            if(Regex(TIME24HOURS_PATTERN).containsMatchIn(taskBeginTime.text.toString())){
+                tPF.arguments = Bundle()
+                tPF.arguments?.putString("hour", taskBeginTime.text.split(":")[0])
+                tPF.arguments?.putString("minute", taskBeginTime.text.split(":")[1])
             }
-
-            override fun onTransitionEnd(transition: Transition) {
-                //findViewById<Button>(R.id.createTaskButton).visibility = View.VISIBLE
+            tPF.show(supportFragmentManager, "beginTimePicker")
+        }
+        taskEndTime.setOnClickListener{
+            val tPF = TimePickerFragment()
+            if(Regex(TIME24HOURS_PATTERN).containsMatchIn(taskEndTime.text.toString())){
+                tPF.arguments = Bundle()
+                tPF.arguments?.putString("hour", taskEndTime.text.split(":")[0])
+                tPF.arguments?.putString("minute", taskEndTime.text.split(":")[1])
             }
-
-            override fun onTransitionCancel(transition: Transition) {
-
+            tPF.show(supportFragmentManager, "endTimePicker")
+        }
+        taskDate.setOnClickListener {
+            val dPF = DatePickerFragment()
+            if(Regex(DATE_PATTERN).containsMatchIn(taskDate.text.toString())){
+                dPF.arguments = Bundle()
+                dPF.arguments?.putString("year", taskDate.text.split("-")[0])
+                dPF.arguments?.putString("month", taskDate.text.split("-")[1])
+                dPF.arguments?.putString("day", taskDate.text.split("-")[2])
             }
-
-            override fun onTransitionPause(transition: Transition) {
-
-            }
-
-            override fun onTransitionResume(transition: Transition) {
-
-            }
-        })
+            dPF.show(supportFragmentManager, "endTimePicker")
+        }
         findViewById<Button>(R.id.createTaskButton).setOnClickListener {
             if(Regex(TIME24HOURS_PATTERN).containsMatchIn(taskBeginTime.text.toString())&&
                 Regex(TIME24HOURS_PATTERN).containsMatchIn(taskEndTime.text.toString())&&
@@ -72,6 +76,18 @@ class CreateTaskActivity : AppCompatActivity() {
             }else
                 Toast.makeText(applicationContext, "La fecha o la hora són invalidas", Toast.LENGTH_LONG).show()
         }
+    }
+
+    override fun applyTextBeginTime(time: String) {
+        findViewById<Button>(R.id.taskBeginTime).text = time
+    }
+
+    override fun applyTextEndTime(time: String) {
+        findViewById<Button>(R.id.taskEndTime).text = time
+    }
+
+    override fun applyTextDate(date: String) {
+        findViewById<Button>(R.id.taskDate).text = date
     }
 
 }

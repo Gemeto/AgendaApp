@@ -384,10 +384,6 @@
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\3b31b17ae03e99f947ad34dec895d5a9\\res\\anim\\design_snackbar_in.xml"
     },
     {
-        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21_activity_main2.xml.flat",
-        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\layout-v21\\activity_main2.xml"
-    },
-    {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_015.png"
     },

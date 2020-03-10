@@ -1,4 +1,4 @@
-package sample
+package adapters
 
 import activities.CreateTaskActivity
 import android.app.Activity
@@ -15,6 +15,10 @@ import android.widget.TextView
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardview_task_in_agenda.view.*
+import sample.CalendarUtils
+import sample.R
+import sample.RequestCode
+import sample.Task
 import java.util.*
 import kotlin.collections.ArrayList
 
@@ -54,14 +58,16 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
             val textEndTime : TextView = v.findViewById(R.id.taskEndTime)
             Log.d("RecyclerView", "CLICKED " + textDesc.text.toString() + " !")
             val intent = Intent(context, CreateTaskActivity::class.java).apply {
-                putExtra("descripcion", textDesc.text.toString());
-                putExtra("date", textDate.text.toString());
-                putExtra("beginTime", textBeginTime.text.toString());
-                putExtra("endTime", textEndTime.text.toString());
-                putExtra("taskId", task?.id);
+                putExtra("descripcion", textDesc.text.toString())
+                putExtra("date", textDate.text.toString())
+                putExtra("beginTime", textBeginTime.text.toString())
+                putExtra("endTime", textEndTime.text.toString())
+                putExtra("taskId", task?.id)
                 putExtra("requestCode", RequestCode().modify_task.toString())
             }
-            startActivityForResult(context as Activity, intent, RequestCode().modify_task,
+            startActivityForResult(context as Activity, intent, if(task?.id!="-1") RequestCode().modify_task
+            else
+                RequestCode().create_task,
                 ActivityOptions.makeSceneTransitionAnimation(context as Activity,
                     Pair(v.findViewById(R.id.bg) as View, "bgT"))
                     .toBundle())
@@ -69,17 +75,26 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
 
         fun bindTask(task: Task) {
             this.task = task
-            view.taskDescription.text = task.description
-            var calendar = Calendar.getInstance(); calendar.time = task.date
-            view.taskDate.text = calendar.get(Calendar.YEAR).toString().padStart(4, '0') + "-" +
-                    (calendar.get(Calendar.MONTH)+1).toString().padStart(2, '0') + "-" +
-                    calendar.get(Calendar.DAY_OF_MONTH).toString().padStart(2, '0')
-            var beginTime = Calendar.getInstance()
-            beginTime.time = task.beginTime
-            view.taskBeginTime.text = beginTime.get(Calendar.HOUR_OF_DAY).toString().padStart(2, '0') + ":" + beginTime.get(Calendar.MINUTE).toString().padStart(2, '0')
-            var endTime = Calendar.getInstance()
-            endTime.time = task.endTime
-            view.taskEndTime.text = endTime.get(Calendar.HOUR_OF_DAY).toString().padStart(2, '0') + ":" + endTime.get(Calendar.MINUTE).toString().toString().padStart(2, '0')
+            if(task.id!="-1") {
+                view.taskDescription.text = task.description
+                var calendar = Calendar.getInstance(); calendar.time = task.date
+                view.taskDate.text = CalendarUtils.dateToString(calendar)
+                var beginTime = Calendar.getInstance()
+                beginTime.time = task.beginTime
+                view.taskBeginTime.text = beginTime.get(Calendar.HOUR_OF_DAY).toString().padStart(
+                    2,
+                    '0'
+                ) + ":" + beginTime.get(Calendar.MINUTE).toString().padStart(2, '0')
+                var endTime = Calendar.getInstance()
+                endTime.time = task.endTime
+                view.taskEndTime.text = endTime.get(Calendar.HOUR_OF_DAY).toString().padStart(
+                    2,
+                    '0'
+                ) + ":" + endTime.get(Calendar.MINUTE).toString().toString().padStart(2, '0')
+            }else{
+                view.taskDate.text =
+                    CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
+            }
         }
     }
 }

@@ -102,9 +102,7 @@ ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManife
 activity#activities.CreateTaskActivity
 ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:9-25:20
 	android:configChanges
-		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:105-166
-	android:theme
-		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:64-104
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:64-125
 	android:name
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:19:19-63
 intent-filter#action:name:android.intent.action.SEARCH+category:name:android.intent.category.LAUNCHER

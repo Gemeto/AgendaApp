@@ -4,9 +4,9 @@
     <facet type="kotlin-language" name="Kotlin">
       <configuration version="3" platform="Native " useProjectSettings="false" isTestModule="true" externalProjectId=":app">
         <sourceSets>
+          <sourceSet>AppBuena.app.iosMain</sourceSet>
           <sourceSet>AppBuena.app.commonTest</sourceSet>
           <sourceSet>AppBuena.app.commonMain</sourceSet>
-          <sourceSet>AppBuena.app.iosMain</sourceSet>
         </sourceSets>
         <newMppModelJpsModuleKind>COMPILATION_AND_SOURCE_SET_HOLDER</newMppModelJpsModuleKind>
         <compilerSettings />

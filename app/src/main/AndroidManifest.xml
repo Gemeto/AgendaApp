@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.CreateTaskActivity" android:theme="@style/Theme.Transparent" android:configChanges="orientation|screenSize|keyboardHidden">
+        <activity android:name="activities.CreateTaskActivity" android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
 
