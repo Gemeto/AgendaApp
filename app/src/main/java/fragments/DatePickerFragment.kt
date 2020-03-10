@@ -22,7 +22,7 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
             day = arguments?.get("day").toString().toInt()
         }
         // Create a new instance of DatePickerDialog and return it
-        return DatePickerDialog(activity, this, year, month, day)
+        return DatePickerDialog(activity as Context, this, year, month, day)
     }
 
     override fun onDateSet(view: DatePicker, y: Int, m: Int, d: Int) {

@@ -22,6 +22,7 @@
             android:clickable="false"
             android:orientation="horizontal"
             android:textAlignment="center"
+            android:maxLines="7"
             />
     <TableRow>
         <Button android:text="APAGAR" android:id="@+id/apBtn"/>

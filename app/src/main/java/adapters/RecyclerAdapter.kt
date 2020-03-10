@@ -15,12 +15,14 @@ import android.widget.TextView
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardview_task_in_agenda.view.*
-import sample.CalendarUtils
+import utils.CalendarUtils
 import sample.R
 import sample.RequestCode
 import sample.Task
+import utils.BDUtils
 import java.util.*
 import kotlin.collections.ArrayList
+
 
 
 class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
@@ -97,4 +99,12 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
             }
         }
     }
+
+    fun removeAt(context: Context, position: Int) {
+        BDUtils().deleteWithId(context, tasks[position].id)
+        tasks.removeAt(position)
+        notifyItemRemoved(position)
+        notifyItemRangeChanged(position, tasks.size)
+    }
+
 }

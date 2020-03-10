@@ -2,7 +2,7 @@ package services
 
 import android.app.IntentService
 import android.content.Intent
-import sample.AlarmUtils
+import utils.AlarmUtils
 
 class RestartAlarmsService : IntentService("RestartAlarms") {
 

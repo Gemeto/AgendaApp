@@ -1,4 +1,4 @@
-package sample
+package utils
 
 import android.app.AlarmManager
 import android.app.PendingIntent
@@ -8,6 +8,8 @@ import android.content.Intent
 import android.util.Log
 import bd.BDManager
 import receivers.AlarmReceiver
+import sample.AppPreferences
+import sample.Task
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -36,7 +38,13 @@ object AlarmUtils {
 
         with(cursor) {
             while (moveToNext()) {
-                val task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
+                val task = Task(
+                    cursor.getString(0),
+                    cursor.getString(1),
+                    cursor.getString(4),
+                    cursor.getString(2),
+                    cursor.getString(3)
+                )
                 if(cursor.getString(2).trim().split(":")[0].toInt() == hourToday.toInt()
                     && cursor.getString(2).trim().split(":")[1].toInt() < minuteToday.toInt()) {
                     bd.close()

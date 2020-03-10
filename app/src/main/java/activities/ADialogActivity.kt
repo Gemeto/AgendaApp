@@ -6,14 +6,13 @@ import android.media.RingtoneManager
 import android.os.Build
 import android.os.Bundle
 import android.transition.Fade
-import android.util.Log
 import android.view.Window
 import android.view.WindowManager
 import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.alarm_popup.*
 import kotlinx.android.synthetic.main.cardview_task_in_agenda.taskDescription
-import sample.AlarmUtils
+import utils.AlarmUtils
 import sample.AppPreferences
 import sample.R
 
@@ -28,12 +27,7 @@ class ADialogActivity : AppCompatActivity() {
         setContentView(R.layout.alarm_popup)
         setShowWhenLocked(true)
         setTurnScreenOn(true)
-        window.addFlags(WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
-                or WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
-                or WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
-                or WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON
-                or WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON
-        )
+        window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON or WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON)
         window.enterTransition = Fade()
         AppPreferences.init(this)
         taskDescription.text = AppPreferences.descripcion

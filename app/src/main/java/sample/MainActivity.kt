@@ -20,8 +20,14 @@ import bd.BDManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlin.collections.ArrayList
 import android.view.MotionEvent
+import android.widget.SimpleAdapter
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.ItemTouchHelper
+import callbacks.SwipeToDeleteCallback
+import kotlinx.android.synthetic.main.activity_main.*
+import utils.AlarmUtils
+import utils.CalendarUtils
 
 actual class Sample {
     actual fun checkMe() = 44
@@ -165,6 +171,7 @@ class MainActivity : AppCompatActivity() {
     private fun initPortrait(){
         setContentView(R.layout.activity_main)
         refreshPortraitList()
+        addSwipeToDeleteFromList()
         //CLICK SEARCH BUTTON TO LOOK FOR CONCRETE TASKS
         findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
             val t:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
@@ -200,6 +207,18 @@ class MainActivity : AppCompatActivity() {
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         rV.adapter =  adapter
+    }
+
+    private fun addSwipeToDeleteFromList(){
+        val context = this
+        val swipeHandler = object : SwipeToDeleteCallback(this) {
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                val adapter = findViewById<RecyclerView>(R.id.recyclerView).adapter as RecyclerAdapter
+                adapter.removeAt(context, viewHolder.adapterPosition)
+            }
+        }
+        val itemTouchHelper = ItemTouchHelper(swipeHandler)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
     }
 
     @SuppressLint("SetTextI18n")

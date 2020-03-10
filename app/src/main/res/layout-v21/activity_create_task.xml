@@ -17,6 +17,7 @@
                 android:transitionName="descT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
+                android:maxLines="10"
                 style="@android:style/Widget.Material.Light.EditText"/>
         <Button
                 android:hint="yyyy-MM-dd"
