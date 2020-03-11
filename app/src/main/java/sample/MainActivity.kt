@@ -121,6 +121,22 @@ class MainActivity : AppCompatActivity() {
         date = Calendar.getInstance()
         this.requestWindowFeature(Window.FEATURE_NO_TITLE)
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        val thread = object : Thread() {
+            override fun run() {
+                try {
+                    do{
+                        Thread.sleep(1000)
+                        runOnUiThread {
+                            refreshPendingTasks()
+                        }
+                    } while (!this.isInterrupted)
+                } catch (e: InterruptedException) {
+                }
+
+            }
+        }
+
+        thread.start()
         initView()
     }
 
@@ -162,33 +178,16 @@ class MainActivity : AppCompatActivity() {
     private fun initLandscape(){
         setContentView(R.layout.activity_main)
         refreshLandscapeView()
-        //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
-        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
-            val intent = Intent(this, CreateTaskActivity::class.java)
-            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
-        }
     }
 
     private fun initPortrait(){
         setContentView(R.layout.activity_main)
         refreshPortraitView()
-        addSwipeToDeleteFromList()
-        //CLICK SEARCH BUTTON TO LOOK FOR CONCRETE TASKS
-        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
-            val t:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
-            t.duration = 500
-            window.exitTransition = t
-            startActivity(Intent(this, BuscadorActivity::class.java))
-        }
-        //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
-        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
-            val intent = Intent(this, CreateTaskActivity::class.java)
-            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
-        }
     }
 
     @SuppressLint("SetTextI18n")
     private fun refreshPortraitView(){
+        setContentView(R.layout.activity_main)
         val list = ArrayList<Task>()
         val db = bdHelper.readableDatabase
         val cursor = db.query(
@@ -209,18 +208,18 @@ class MainActivity : AppCompatActivity() {
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         rV.adapter =  adapter
-        val n = BDUtils().pendingTasksToday(this)
-        if(n>0){
-            findViewById<TextView>(R.id.text).textSize = 40F
-            findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
-        }else {
-            findViewById<TextView>(R.id.text).textSize = 10F
-            findViewById<TextView>(R.id.text).text = ""
+        addSwipeToDeleteFromList()
+        refreshPendingTasks()
+        //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
+        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
+            val intent = Intent(this, CreateTaskActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
         }
     }
 
     @SuppressLint("SetTextI18n")
     private fun refreshLandscapeView(){
+        setContentView(R.layout.activity_main)
         val list = ArrayList<ArrayList<Task>>()
         for(i in 0..6){
             list.add(ArrayList<Task>())
@@ -241,7 +240,6 @@ class MainActivity : AppCompatActivity() {
         with(cursor) {
             while (moveToNext()) {
                 val task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
-                println(cursor.getString(4))
                 val calendar:Calendar = Calendar.getInstance()
                 calendar.time = task.date
                 when(calendar.get(Calendar.DAY_OF_WEEK)) {
@@ -260,13 +258,12 @@ class MainActivity : AppCompatActivity() {
         val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
         rV.layoutManager = manager
         rV.adapter = RecyclerAdapter(obtenerLista(list), Configuration.ORIENTATION_LANDSCAPE)
-        val n = BDUtils().pendingTasksToday(this)
-        if(n>0){
-            findViewById<TextView>(R.id.text).textSize = 12F
-            findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
-        }else {
-            findViewById<TextView>(R.id.text).textSize = 3F
-            findViewById<TextView>(R.id.text).text = ""
+        addSwipeToDeleteFromList()
+        refreshPendingTasks()
+        //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
+        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
+            val intent = Intent(this, CreateTaskActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
         }
     }
 
@@ -277,24 +274,18 @@ class MainActivity : AppCompatActivity() {
             refreshPortraitView()
     }
 
-    private fun initView(){
-        val thread = object : Thread() {
-
-            override fun run() {
-                try {
-                    do{
-                        Thread.sleep(30000)
-                        runOnUiThread {
-                            refreshView()
-                        }
-                    } while (!this.isInterrupted)
-                } catch (e: InterruptedException) {
-                }
-
-            }
+    private fun refreshPendingTasks(){
+        val n = BDUtils().pendingTasksToday(this)
+        if(n>0){
+            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 12F else 40F
+            findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
+        }else {
+            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 3F else 10F
+            findViewById<TextView>(R.id.text).text = ""
         }
+    }
 
-        thread.start()
+    private fun initView(){
         if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
             initLandscape()
         else
@@ -338,6 +329,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
         val itemTouchHelper = ItemTouchHelper(swipeHandler)
-        itemTouchHelper.attachToRecyclerView(recyclerView)
+        itemTouchHelper.attachToRecyclerView(findViewById<RecyclerView>(R.id.recyclerView))
     }
 }
