@@ -9,6 +9,13 @@ object CalendarUtils {
         return tDay
     }
 
+    fun timeToString(c: Calendar): String{
+        return c.get(Calendar.HOUR_OF_DAY).toString().padStart(
+            2,
+            '0'
+        ) + ":" + c.get(Calendar.MINUTE).toString().toString().padStart(2, '0')
+    }
+
     fun firstDayOfTheWeek(c0: Calendar):String{
         val c = Calendar.getInstance()
         c.time = c0.time

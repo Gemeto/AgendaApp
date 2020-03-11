@@ -6,12 +6,15 @@ import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
 import android.content.res.Configuration
+import android.graphics.Color
 import android.util.Log
 import android.util.Pair
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardview_task_in_agenda.view.*
@@ -35,7 +38,7 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
     override fun getItemCount() = tasks.size
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TasksHolder {
-        val layout = if (orientation == Configuration.ORIENTATION_LANDSCAPE) R.layout.cardview_task_in_agenda else R.layout.cardview_task_in_agenda
+        val layout = R.layout.cardview_task_in_agenda
         val inflatedView = LayoutInflater.from(parent.context).inflate(layout, parent, false)
         return TasksHolder(inflatedView, parent.context)
     }
@@ -77,25 +80,25 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
 
         fun bindTask(task: Task) {
             this.task = task
-            if(task.id!="-1") {
+            if(task.id=="-1") {
+                view.taskDate.text =
+                    CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
+            }else if(task.id=="-2"){
+                view.taskDescription.text = task.description
+                view.taskDescription.textSize = 20F
+                view.isClickable = false
+                view.findViewById<FrameLayout>(R.id.borderB).visibility = View.INVISIBLE
+                view.findViewById<FrameLayout>(R.id.borderR).visibility = View.INVISIBLE
+            }else{
                 view.taskDescription.text = task.description
                 var calendar = Calendar.getInstance(); calendar.time = task.date
                 view.taskDate.text = CalendarUtils.dateToString(calendar)
                 var beginTime = Calendar.getInstance()
                 beginTime.time = task.beginTime
-                view.taskBeginTime.text = beginTime.get(Calendar.HOUR_OF_DAY).toString().padStart(
-                    2,
-                    '0'
-                ) + ":" + beginTime.get(Calendar.MINUTE).toString().padStart(2, '0')
+                view.taskBeginTime.text = CalendarUtils.timeToString(beginTime)
                 var endTime = Calendar.getInstance()
                 endTime.time = task.endTime
-                view.taskEndTime.text = endTime.get(Calendar.HOUR_OF_DAY).toString().padStart(
-                    2,
-                    '0'
-                ) + ":" + endTime.get(Calendar.MINUTE).toString().toString().padStart(2, '0')
-            }else{
-                view.taskDate.text =
-                    CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
+                view.taskEndTime.text = CalendarUtils.timeToString(endTime)
             }
         }
     }

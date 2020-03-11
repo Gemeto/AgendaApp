@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.transition.*
+import android.view.Window
+import android.view.WindowManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
@@ -20,6 +22,7 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_create_task)
+        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         if(intent.getStringExtra("requestCode") == RequestCode().modify_task.toString()) {
             findViewById<TextView>(R.id.taskDescription).text = intent.getStringExtra("descripcion")
             findViewById<Button>(R.id.taskDate).text = intent.getStringExtra("date")

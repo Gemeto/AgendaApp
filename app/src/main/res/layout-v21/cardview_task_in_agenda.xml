@@ -7,14 +7,22 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            card_view:cardCornerRadius="0dp"
+            android:padding="5dp"
+            card_view:cardCornerRadius="50dp"
         >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+    <FrameLayout
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="bottom"/>
+
+        <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/cardBg"
                 xmlns:app="http://schemas.android.com/tools"
+                android:padding="20dp"
                 >
 
             <TableLayout
@@ -30,7 +38,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:transitionName="dateT"
-                        android:textSize="17dp"
+                        android:textSize="20dp"
                         android:clickable="false"
                         app:layout_constraintTop_toTopOf="parent"
                         android:textAlignment="center"
@@ -52,7 +60,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:transitionName="begintT"
-                            android:textSize="15dp"
+                            android:textSize="17dp"
                             android:clickable="false"
                             android:layout_column="0"
                             android:textAlignment="center"
@@ -63,12 +71,12 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:transitionName="endtT"
-                            android:textSize="15dp"
+                            android:textSize="17dp"
                             android:clickable="false"
                             android:layout_column="1"
                             android:textAlignment="center"
                             />
                 </TableRow>
             </TableLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>

@@ -20,6 +20,8 @@ import bd.BDManager
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlin.collections.ArrayList
 import android.view.MotionEvent
+import android.view.Window
+import android.view.WindowManager
 import android.widget.SimpleAdapter
 import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
@@ -27,6 +29,7 @@ import androidx.recyclerview.widget.ItemTouchHelper
 import callbacks.SwipeToDeleteCallback
 import kotlinx.android.synthetic.main.activity_main.*
 import utils.AlarmUtils
+import utils.BDUtils
 import utils.CalendarUtils
 
 actual class Sample {
@@ -100,10 +103,10 @@ class MainActivity : AppCompatActivity() {
                 val deltaX = x2 - x1
                 if (deltaX > MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     date = CalendarUtils.pastWeek(date)
-                    refreshLandscapeLists()
+                    refreshLandscapeView()
                 } else if (deltaX < MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
                     date = CalendarUtils.nextWeek(date)
-                    refreshLandscapeLists()
+                    refreshLandscapeView()
                 }
             }
         }
@@ -116,18 +119,14 @@ class MainActivity : AppCompatActivity() {
         AppPreferences.init(this)
         AlarmUtils.setNextAlarm(this, false)
         date = Calendar.getInstance()
-        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
-            initLandscape()
-        else
-            initPortrait()
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
+        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
+        initView()
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        if(newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE)
-            initLandscape()
-        else
-            initPortrait()
+        refreshView()
     }
 
     override fun startActivityForResult(intent: Intent?, requestCode: Int) {
@@ -154,10 +153,7 @@ class MainActivity : AppCompatActivity() {
             bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
         }
         bd.close()
-        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
-            refreshLandscapeLists()
-        else
-            refreshPortraitList()
+        refreshView()
 
         AlarmUtils.setNextAlarm(this, false)
         }
@@ -165,12 +161,17 @@ class MainActivity : AppCompatActivity() {
 
     private fun initLandscape(){
         setContentView(R.layout.activity_main)
-        refreshLandscapeLists()
+        refreshLandscapeView()
+        //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
+        findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
+            val intent = Intent(this, CreateTaskActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
+        }
     }
 
     private fun initPortrait(){
         setContentView(R.layout.activity_main)
-        refreshPortraitList()
+        refreshPortraitView()
         addSwipeToDeleteFromList()
         //CLICK SEARCH BUTTON TO LOOK FOR CONCRETE TASKS
         findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
@@ -186,7 +187,8 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun refreshPortraitList(){
+    @SuppressLint("SetTextI18n")
+    private fun refreshPortraitView(){
         val list = ArrayList<Task>()
         val db = bdHelper.readableDatabase
         val cursor = db.query(
@@ -207,22 +209,18 @@ class MainActivity : AppCompatActivity() {
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         rV.adapter =  adapter
-    }
-
-    private fun addSwipeToDeleteFromList(){
-        val context = this
-        val swipeHandler = object : SwipeToDeleteCallback(this) {
-            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
-                val adapter = findViewById<RecyclerView>(R.id.recyclerView).adapter as RecyclerAdapter
-                adapter.removeAt(context, viewHolder.adapterPosition)
-            }
+        val n = BDUtils().pendingTasksToday(this)
+        if(n>0){
+            findViewById<TextView>(R.id.text).textSize = 40F
+            findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
+        }else {
+            findViewById<TextView>(R.id.text).textSize = 10F
+            findViewById<TextView>(R.id.text).text = ""
         }
-        val itemTouchHelper = ItemTouchHelper(swipeHandler)
-        itemTouchHelper.attachToRecyclerView(recyclerView)
     }
 
     @SuppressLint("SetTextI18n")
-    private fun refreshLandscapeLists(){
+    private fun refreshLandscapeView(){
         val list = ArrayList<ArrayList<Task>>()
         for(i in 0..6){
             list.add(ArrayList<Task>())
@@ -230,7 +228,7 @@ class MainActivity : AppCompatActivity() {
         val db = bdHelper.readableDatabase
         val monday = CalendarUtils.firstDayOfTheWeek(date)
         val sunday = CalendarUtils.lastDayOfTheWeek(date)
-        findViewById<TextView>(R.id.week).text = "$monday $sunday"
+        //findViewById<TextView>(R.id.week).text = "$monday $sunday"
         val cursor = db.query(
             "TASK",
             null ,
@@ -262,6 +260,45 @@ class MainActivity : AppCompatActivity() {
         val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
         rV.layoutManager = manager
         rV.adapter = RecyclerAdapter(obtenerLista(list), Configuration.ORIENTATION_LANDSCAPE)
+        val n = BDUtils().pendingTasksToday(this)
+        if(n>0){
+            findViewById<TextView>(R.id.text).textSize = 12F
+            findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
+        }else {
+            findViewById<TextView>(R.id.text).textSize = 3F
+            findViewById<TextView>(R.id.text).text = ""
+        }
+    }
+
+    private fun refreshView(){
+        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            refreshLandscapeView()
+        else
+            refreshPortraitView()
+    }
+
+    private fun initView(){
+        val thread = object : Thread() {
+
+            override fun run() {
+                try {
+                    do{
+                        Thread.sleep(30000)
+                        runOnUiThread {
+                            refreshView()
+                        }
+                    } while (!this.isInterrupted)
+                } catch (e: InterruptedException) {
+                }
+
+            }
+        }
+
+        thread.start()
+        if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE)
+            initLandscape()
+        else
+            initPortrait()
     }
 
     private fun obtenerLista(l:ArrayList<ArrayList<Task>>):ArrayList<Task> {
@@ -271,7 +308,15 @@ class MainActivity : AppCompatActivity() {
                 longer=i
         }
         val array = ArrayList<Task>()
-        for(j in 0 until l[longer].size) {
+        array.add(Task("-2", "Lunes", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(0))))
+        array.add(Task("-2", "Martes", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(1))))
+        array.add(Task("-2", "Miercoles", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(2))))
+        array.add(Task("-2", "Jueves", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(3))))
+        array.add(Task("-2", "Viernes", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(4))))
+        array.add(Task("-2", "Sábado", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(5))))
+        array.add(Task("-2", "Domingo", CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(6))))
+
+        for(j in 0 until if(l[longer].size < 7) 7 else l[longer].size) {
              for (i in 0 until l.size) {
                 if(l[i].size>j && l[i].size>0){
                     array.add(l[i][j])
@@ -281,5 +326,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
         return array
+    }
+
+    private fun addSwipeToDeleteFromList(){
+        val context = this
+        val swipeHandler = object : SwipeToDeleteCallback(this) {
+            override fun onSwiped(viewHolder: RecyclerView.ViewHolder, direction: Int) {
+                val adapter = findViewById<RecyclerView>(R.id.recyclerView).adapter as RecyclerAdapter
+                adapter.removeAt(context, viewHolder.adapterPosition)
+                refreshView()
+            }
+        }
+        val itemTouchHelper = ItemTouchHelper(swipeHandler)
+        itemTouchHelper.attachToRecyclerView(recyclerView)
     }
 }

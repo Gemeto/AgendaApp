@@ -27,7 +27,7 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
 
     override fun onDateSet(view: DatePicker, y: Int, m: Int, d: Int) {
         val year = "$y".padStart(4, '0')
-        val month = "$m".padStart(2, '0')
+        val month = (""+(m+1)).padStart(2, '0')
         val day = "$d".padStart(2, '0')
         listener.applyTextDate("$year-$month-$day")
     }

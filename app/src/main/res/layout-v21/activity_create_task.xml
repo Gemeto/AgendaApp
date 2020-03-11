@@ -3,7 +3,8 @@
                                              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
                                              android:layout_height="match_parent"
                                              android:id="@+id/bg"
-                                             android:transitionName="bgT">
+                                             android:transitionName="bgT"
+                                             android:orientation="vertical">
     <TableLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -17,7 +18,7 @@
                 android:transitionName="descT"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:maxLines="10"
+                android:maxLines="20"
                 style="@android:style/Widget.Material.Light.EditText"/>
         <Button
                 android:hint="yyyy-MM-dd"

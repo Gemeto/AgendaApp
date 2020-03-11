@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <com.google.android.material.card.MaterialCardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bg"
+            android:transitionName="bgT"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+        >
+
+    <FrameLayout
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/borderB"
+            android:layout_gravity="bottom"/>
+
+    <FrameLayout
+            android:background="@android:color/black"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/borderR"
+            android:layout_gravity="right"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardBg"
+                xmlns:app="http://schemas.android.com/tools"
+                >
+
+            <TableLayout
+                    android:id="@+id/table"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="0, 1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    >
+
+                <TextView
+                        android:id="@+id/taskDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:transitionName="dateT"
+                        android:textSize="10dp"
+                        android:clickable="false"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textAlignment="center"
+                        />
+                <TextView
+                        android:id="@+id/taskDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:transitionName="descT"
+                        android:textSize="20dp"
+                        android:clickable="false"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textAlignment="center"
+                        />
+
+                <TableRow>
+                    <TextView
+                            android:id="@+id/taskBeginTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:transitionName="begintT"
+                            android:textSize="15dp"
+                            android:clickable="false"
+                            android:layout_column="0"
+                            android:textAlignment="center"
+                            />
+
+                    <TextView
+                            android:id="@+id/taskEndTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:transitionName="endtT"
+                            android:textSize="15dp"
+                            android:clickable="false"
+                            android:layout_column="1"
+                            android:textAlignment="center"
+                            />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>

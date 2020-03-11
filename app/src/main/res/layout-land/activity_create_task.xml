@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:id="@+id/bg"
+                                             android:transitionName="bgT"
+                                             android:orientation="vertical">
+    <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0, 1">
+        <EditText
+                android:hint="Descripción, anotaciones..."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:id="@+id/taskDescription"
+                android:transitionName="descT"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:maxLines="7"
+                style="@android:style/Widget.Material.Light.EditText"/>
+        <Button
+                android:hint="yyyy-MM-dd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/taskDate"
+                android:transitionName="dateT"
+                android:maxLines="1"
+                />
+        <TableRow>
+            <Button
+                    android:hint="HH:MM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskBeginTime"
+                    android:transitionName="begintT"
+                    android:maxLines="1"
+                    />
+            <Button
+                    android:hint="HH:MM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/taskEndTime"
+                    android:transitionName="endtT"
+                    android:maxLines="1"
+                    />
+        </TableRow>
+        <Button
+                android:text="Añadir a la lista"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:id="@+id/createTaskButton"/>
+    </TableLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

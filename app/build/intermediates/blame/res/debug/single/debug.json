@@ -100,6 +100,10 @@
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.1.0.aar\\a51c8891f56c2d52218edf8fce0996c4\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
+        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_activity_create_task.xml.flat",
+        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\layout-land\\activity_create_task.xml"
+    },
+    {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
@@ -634,6 +638,10 @@
     {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\material-1.0.0.aar\\3b31b17ae03e99f947ad34dec895d5a9\\res\\color\\mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\layout-land_cardview_task_in_agenda.xml.flat",
+        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\layout-land\\cardview_task_in_agenda.xml"
     },
     {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldrtl-xhdpi-v17_abc_ic_menu_cut_mtrl_alpha.png.flat",
@@ -1326,6 +1334,10 @@
     {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_popup_menu_item_layout.xml.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_border.xml.flat",
+        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\drawable\\border.xml"
     },
     {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\anim_abc_tooltip_enter.xml.flat",
