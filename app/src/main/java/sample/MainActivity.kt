@@ -170,9 +170,9 @@ class MainActivity : AppCompatActivity() {
             bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
         }
         bd.close()
-        refreshView()
         AlarmUtils.setNextAlarm(this, false)
         }
+        refreshView()
     }
 
     private fun initLandscape(){

@@ -484,6 +484,10 @@
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_round_border.xml.flat",
+        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\drawable\\round_border.xml"
+    },
+    {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_light.xml.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\color\\abc_primary_text_material_light.xml"
     },

@@ -4,7 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.transition.*
-import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.CheckBox
@@ -66,16 +65,24 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
             dPF.show(supportFragmentManager, "endTimePicker")
         }
         findViewById<Button>(R.id.createTaskButton).setOnClickListener {
-            val result = Intent()
-            result.putExtra("taskId", intent.getStringExtra("taskId"))
-            result.putExtra("taskDescription", taskDescription.text.toString())
-            result.putExtra("taskDate", taskDate.text.toString())
-            result.putExtra("taskBeginTime", taskBeginTime.text.toString())
-            result.putExtra("taskEndTime", taskEndTime.text.toString())
-            result.putExtra("alarm", ringAlarm.isChecked)
-            setResult(Activity.RESULT_OK, result)
-            finish()
-            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)
+            if(!Regex(DATE_PATTERN).containsMatchIn(taskDate.text.toString()))
+                Toast.makeText(applicationContext, "La fecha esta vacía", Toast.LENGTH_LONG).show()
+            else if(!Regex(TIME24HOURS_PATTERN).containsMatchIn(taskBeginTime.text.toString()))
+                Toast.makeText(applicationContext, "La hora de inicio está vacía", Toast.LENGTH_LONG).show()
+            else if(!Regex(TIME24HOURS_PATTERN).containsMatchIn(taskEndTime.text.toString()))
+                Toast.makeText(applicationContext, "La hora de fin está vacía", Toast.LENGTH_LONG).show()
+            else{
+                val result = Intent()
+                result.putExtra("taskId", intent.getStringExtra("taskId"))
+                result.putExtra("taskDescription", taskDescription.text.toString())
+                result.putExtra("taskDate", taskDate.text.toString())
+                result.putExtra("taskBeginTime", taskBeginTime.text.toString())
+                result.putExtra("taskEndTime", taskEndTime.text.toString())
+                result.putExtra("alarm", ringAlarm.isChecked)
+                setResult(Activity.RESULT_OK, result)
+                finish()
+                overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)
+            }
         }
     }
 
