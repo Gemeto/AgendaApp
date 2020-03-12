@@ -160,6 +160,7 @@ class MainActivity : AppCompatActivity() {
             put("beginTime", ((data.extras as Bundle)["taskBeginTime"] as Any).toString())
             put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
             put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
+            put("alarm", ((data.extras as Bundle)["alarm"] as Any) as Boolean)
         }
         if (requestCode == RequestCode().create_task) {
             // Insertamos la tarea en la base de datos
@@ -170,7 +171,6 @@ class MainActivity : AppCompatActivity() {
         }
         bd.close()
         refreshView()
-
         AlarmUtils.setNextAlarm(this, false)
         }
     }
@@ -185,26 +185,9 @@ class MainActivity : AppCompatActivity() {
         refreshPortraitView()
     }
 
-    @SuppressLint("SetTextI18n")
     private fun refreshPortraitView(){
         setContentView(R.layout.activity_main)
-        val list = ArrayList<Task>()
-        val db = bdHelper.readableDatabase
-        val cursor = db.query(
-            "TASK",
-            null ,
-            null,
-            null,
-            null,
-            null,
-            null
-        )
-        with(cursor) {
-            while (moveToNext()) {
-                list.add(Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3)))
-            }
-        }
-
+        val list = BDUtils().getTasks(this)
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         rV.adapter =  adapter
@@ -215,45 +198,15 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateTaskActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
         }
+        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
+            val intent = Intent(this, BuscadorActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().search, null)
+        }
     }
 
-    @SuppressLint("SetTextI18n")
     private fun refreshLandscapeView(){
         setContentView(R.layout.activity_main)
-        val list = ArrayList<ArrayList<Task>>()
-        for(i in 0..6){
-            list.add(ArrayList<Task>())
-        }
-        val db = bdHelper.readableDatabase
-        val monday = CalendarUtils.firstDayOfTheWeek(date)
-        val sunday = CalendarUtils.lastDayOfTheWeek(date)
-        //findViewById<TextView>(R.id.week).text = "$monday $sunday"
-        val cursor = db.query(
-            "TASK",
-            null ,
-            "date BETWEEN '$monday' AND '$sunday'",
-            null,
-            null,
-            null,
-            "date DESC"
-        )
-        with(cursor) {
-            while (moveToNext()) {
-                val task = Task(cursor.getString(0), cursor.getString(1), cursor.getString(4), cursor.getString(2), cursor.getString(3))
-                val calendar:Calendar = Calendar.getInstance()
-                calendar.time = task.date
-                when(calendar.get(Calendar.DAY_OF_WEEK)) {
-                    Calendar.MONDAY -> list[0].add(task)
-                    Calendar.TUESDAY -> list[1].add(task)
-                    Calendar.WEDNESDAY -> list[2].add(task)
-                    Calendar.THURSDAY -> list[3].add(task)
-                    Calendar.FRIDAY -> list[4].add(task)
-                    Calendar.SATURDAY -> list[5].add(task)
-                    Calendar.SUNDAY -> list[6].add(task)
-
-                }
-            }
-        }
+        val list = BDUtils().getTasksOfWeek(this, date)
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
         rV.layoutManager = manager
@@ -264,6 +217,10 @@ class MainActivity : AppCompatActivity() {
         findViewById<FloatingActionButton>(R.id.addTask).setOnClickListener {
             val intent = Intent(this, CreateTaskActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
+        }
+        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
+            val intent = Intent(this, BuscadorActivity::class.java)
+            ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().search, null)
         }
     }
 
@@ -277,10 +234,10 @@ class MainActivity : AppCompatActivity() {
     private fun refreshPendingTasks(){
         val n = BDUtils().pendingTasksToday(this)
         if(n>0){
-            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 12F else 40F
+            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 12F else 20F
             findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
         }else {
-            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 3F else 10F
+            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 3F else 3F
             findViewById<TextView>(R.id.text).text = ""
         }
     }

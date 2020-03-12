@@ -12,19 +12,13 @@
                 android:layout_height="match_parent"
                 >
 
-                <androidx.appcompat.widget.Toolbar
-                        android:id="@+id/toolbar"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/design_default_color_primary_dark">
-<TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textColor="@android:color/white"
-        android:id="@+id/text"/>
-                </androidx.appcompat.widget.Toolbar>
+                <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                android:id="@+id/text"/>
 
                 <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerView"
@@ -32,7 +26,6 @@
                         android:layout_height="match_parent"
                         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
                         />
-
         </TableLayout>
 
         <TableLayout

@@ -18,7 +18,7 @@ class DatePickerFragment : DialogFragment(), DatePickerDialog.OnDateSetListener 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         if(arguments?.get("year") != null){
             year = arguments?.get("year").toString().toInt()
-            month = arguments?.get("month").toString().toInt()
+            month = arguments?.get("month").toString().toInt()-1
             day = arguments?.get("day").toString().toInt()
         }
         // Create a new instance of DatePickerDialog and return it

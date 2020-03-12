@@ -6,24 +6,25 @@
                                                    android:layout_width="match_parent"
                                                    android:layout_height="match_parent"
                                                    android:transitionName="bgT"
-                                                   android:id="@+id/cardBg">
+                                                   android:id="@+id/bg">
 
-<TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="@id/guideline"
-        android:stretchColumns="0, 1">
     <TextView
             android:id="@+id/taskDescription"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
             android:transitionName="descT"
             android:textSize="40dp"
-            android:clickable="false"
+            android:textColor="@android:color/darker_gray"
             android:orientation="horizontal"
+            android:scrollbars="vertical"
             android:textAlignment="center"
-            android:maxLines="7"
             />
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:stretchColumns="0, 1">
     <TableRow>
         <Button android:text="APAGAR" android:id="@+id/apBtn"/>
 
@@ -31,15 +32,5 @@
 
     </TableRow>
 </TableLayout>
-
-
-    <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent = "0.5"/>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

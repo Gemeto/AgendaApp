@@ -8,14 +8,14 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="5dp"
-            card_view:cardCornerRadius="50dp"
+            card_view:cardCornerRadius="0dp"
         >
 
     <FrameLayout
             android:background="@android:color/black"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:layout_gravity="bottom"/>
+            android:layout_height="1dp"
+            android:layout_gravity="top"/>
 
         <LinearLayout
                 android:layout_width="match_parent"

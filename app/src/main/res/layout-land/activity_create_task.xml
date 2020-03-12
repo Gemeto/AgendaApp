@@ -52,6 +52,10 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:id="@+id/createTaskButton"/>
+        <CheckBox
+                android:id="@+id/ringAlarm"
+                android:text="Hacer sonar alarma"
+                />
     </TableLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

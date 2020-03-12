@@ -113,8 +113,6 @@ ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManife
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:21:25-68
 activity#activities.BuscadorActivity
 ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:26:9-32:20
-	android:theme
-		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:26:62-109
 	android:name
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:26:19-61
 activity#activities.ADialogActivity

@@ -68,6 +68,7 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
                 putExtra("beginTime", textBeginTime.text.toString())
                 putExtra("endTime", textEndTime.text.toString())
                 putExtra("taskId", task?.id)
+                putExtra("alarm", task?.alarm)
                 putExtra("requestCode", RequestCode().modify_task.toString())
             }
             startActivityForResult(context as Activity, intent, if(task?.id!="-1") RequestCode().modify_task

@@ -1022,7 +1022,6 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
-drawable border
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1179,7 +1178,6 @@ id forever
 id ghost_view
 id gone
 id group_divider
-id guideline
 id home
 id homeAsUp
 id icon
@@ -1229,6 +1227,7 @@ id repBtn
 id right
 id right_icon
 id right_side
+id ringAlarm
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1298,7 +1297,6 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
-id toolbar
 id top
 id topPanel
 id touch_outside

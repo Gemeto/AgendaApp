@@ -21,7 +21,7 @@
                 android:maxLines="20"
                 style="@android:style/Widget.Material.Light.EditText"/>
         <Button
-                android:hint="yyyy-MM-dd"
+                android:hint="Fecha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/taskDate"
@@ -30,7 +30,7 @@
                 />
         <TableRow>
             <Button
-                    android:hint="HH:MM"
+                    android:hint="Hora de inicio"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/taskBeginTime"
@@ -38,7 +38,7 @@
                     android:maxLines="1"
                     />
             <Button
-                    android:hint="HH:MM"
+                    android:hint="Hora de fin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/taskEndTime"
@@ -52,6 +52,10 @@
                 android:layout_height="wrap_content"
                 android:visibility="visible"
                 android:id="@+id/createTaskButton"/>
+        <CheckBox
+                android:id="@+id/ringAlarm"
+                android:text="Hacer sonar alarma"
+                />
     </TableLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

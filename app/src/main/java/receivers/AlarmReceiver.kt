@@ -19,13 +19,9 @@ import utils.AlarmUtils
 class AlarmReceiver : BroadcastReceiver() {
     @RequiresApi(Build.VERSION_CODES.O)
     override fun onReceive(context: Context, intent: Intent) {
-        // Is triggered when alarm goes off, i.e. receiving a system broadcast
-        if (intent.action == "FOO_ACTION") {
-            val i = Intent(context, ADialogActivity::class.java)
-            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
-            context.startActivity(i)
-        }
-        AlarmUtils.setNextAlarm(context, false)
+        val i = Intent(context, ADialogActivity::class.java)
+        i.flags = Intent.FLAG_ACTIVITY_NEW_TASK
+        context.startActivity(i)
     }
 
     @RequiresApi(Build.VERSION_CODES.O)

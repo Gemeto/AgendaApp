@@ -7,6 +7,7 @@ import android.transition.*
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -28,6 +29,7 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
             findViewById<Button>(R.id.taskDate).text = intent.getStringExtra("date")
             findViewById<Button>(R.id.taskBeginTime).text = intent.getStringExtra("beginTime")
             findViewById<Button>(R.id.taskEndTime).text = intent.getStringExtra("endTime")
+            findViewById<CheckBox>(R.id.ringAlarm).isChecked = intent.getIntExtra("alarm", 0) != 0
         }
         val transition:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
         window.sharedElementEnterTransition = transition
@@ -64,20 +66,16 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
             dPF.show(supportFragmentManager, "endTimePicker")
         }
         findViewById<Button>(R.id.createTaskButton).setOnClickListener {
-            if(Regex(TIME24HOURS_PATTERN).containsMatchIn(taskBeginTime.text.toString())&&
-                Regex(TIME24HOURS_PATTERN).containsMatchIn(taskEndTime.text.toString())&&
-                Regex(DATE_PATTERN).containsMatchIn(taskDate.text.toString())) {
-                val result = Intent()
-                result.putExtra("taskId", intent.getStringExtra("taskId"))
-                result.putExtra("taskDescription", taskDescription.text.toString())
-                result.putExtra("taskDate", taskDate.text.toString())
-                result.putExtra("taskBeginTime", taskBeginTime.text.toString())
-                result.putExtra("taskEndTime", taskEndTime.text.toString())
-                setResult(Activity.RESULT_OK, result)
-                finish()
-                overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)
-            }else
-                Toast.makeText(applicationContext, "La fecha o la hora són invalidas", Toast.LENGTH_LONG).show()
+            val result = Intent()
+            result.putExtra("taskId", intent.getStringExtra("taskId"))
+            result.putExtra("taskDescription", taskDescription.text.toString())
+            result.putExtra("taskDate", taskDate.text.toString())
+            result.putExtra("taskBeginTime", taskBeginTime.text.toString())
+            result.putExtra("taskEndTime", taskEndTime.text.toString())
+            result.putExtra("alarm", ringAlarm.isChecked)
+            setResult(Activity.RESULT_OK, result)
+            finish()
+            overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)
         }
     }
 
