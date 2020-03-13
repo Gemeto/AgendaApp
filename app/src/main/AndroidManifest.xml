@@ -30,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.ADialogActivity" android:showOnLockScreen="true" android:turnScreenOn="true" android:theme="@style/Theme.Transparent">
+        <activity android:name="activities.ADialogActivity" android:showOnLockScreen="true" android:turnScreenOn="true" android:theme="@style/Theme.Transparent" android:screenOrientation="portrait">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>

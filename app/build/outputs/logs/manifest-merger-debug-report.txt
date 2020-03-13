@@ -117,6 +117,8 @@ ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManife
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:26:19-61
 activity#activities.ADialogActivity
 ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:9-37:20
+	android:screenOrientation
+		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:162-198
 	android:turnScreenOn
 		ADDED from C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\AndroidManifest.xml:33:93-120
 	android:showOnLockScreen

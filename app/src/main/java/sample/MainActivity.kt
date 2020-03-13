@@ -153,24 +153,24 @@ class MainActivity : AppCompatActivity() {
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if (data != null) {
-        val bd = bdHelper.writableDatabase
-        //Creamos un contenido de valores con los datos de la tarea
-        val values = ContentValues().apply {
-            put("descripcion", ((data.extras as Bundle)["taskDescription"] as Any).toString())
-            put("beginTime", ((data.extras as Bundle)["taskBeginTime"] as Any).toString())
-            put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
-            put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
-            put("alarm", ((data.extras as Bundle)["alarm"] as Any) as Boolean)
-        }
-        if (requestCode == RequestCode().create_task) {
-            // Insertamos la tarea en la base de datos
-            bd?.insert("TASK", null, values)
-        } else if (requestCode == RequestCode().modify_task) {
-            // Modificamos la tarea en la base de datos
-            bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
-        }
-        bd.close()
-        AlarmUtils.setNextAlarm(this, false)
+            val bd = bdHelper.writableDatabase
+            //Creamos un contenido de valores con los datos de la tarea
+            val values = ContentValues().apply {
+                put("descripcion", ((data.extras as Bundle)["taskDescription"] as Any).toString())
+                put("beginTime", ((data.extras as Bundle)["taskBeginTime"] as Any).toString())
+                put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
+                put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
+                put("alarm", ((data.extras as Bundle)["alarm"] as Any) as Boolean)
+            }
+            if (requestCode == RequestCode().create_task) {
+                // Insertamos la tarea en la base de datos
+                bd?.insert("TASK", null, values)
+            } else if (requestCode == RequestCode().modify_task) {
+                // Modificamos la tarea en la base de datos
+                bd?.update("TASK", values, "key = " + ((data.extras as Bundle)["taskId"] as Any).toString(), null)
+            }
+            bd.close()
+            AlarmUtils.setNextAlarm(this, false)
         }
         refreshView()
     }
@@ -237,8 +237,16 @@ class MainActivity : AppCompatActivity() {
             findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 12F else 20F
             findViewById<TextView>(R.id.text).text = "$n tareas pendientes para hoy"
         }else {
-            findViewById<TextView>(R.id.text).textSize = if(resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 3F else 3F
-            findViewById<TextView>(R.id.text).text = ""
+            var adapter = findViewById<RecyclerView>(R.id.recyclerView).adapter as RecyclerAdapter
+            if(adapter.itemCount == 0) {
+                findViewById<TextView>(R.id.text).textSize =
+                    if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 12F else 20F
+                findViewById<TextView>(R.id.text).text = "No hay tareas"
+            }else {
+                findViewById<TextView>(R.id.text).textSize =
+                    if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) 3F else 3F
+                findViewById<TextView>(R.id.text).text = ""
+            }
         }
     }
 

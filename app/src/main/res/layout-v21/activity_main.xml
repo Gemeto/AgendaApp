@@ -18,7 +18,8 @@
                 android:textAlignment="center"
                 android:textSize="20dp"
                 android:textColor="@android:color/black"
-                android:id="@+id/text"/>
+                android:id="@+id/text">
+                </TextView>
 
                 <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerView"

@@ -340,6 +340,10 @@
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-mdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_pending_notif_bg.xml.flat",
+        "source": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\src\\main\\res\\drawable\\pending_notif_bg.xml"
+    },
+    {
         "merged": "C:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_list_pressed_holo_light.9.png.flat",
         "source": "C:\\Users\\skait\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-1.1.0.aar\\8e40adaf81d54dd5fc4f12f48ad6cc5f\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
