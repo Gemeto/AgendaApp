@@ -10,21 +10,19 @@ import android.os.Bundle
 import android.transition.Fade
 import android.view.Window
 import android.view.WindowManager
-import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.alarm_popup.*
-import kotlinx.android.synthetic.main.cardview_task_in_agenda.taskDescription
 import utils.AlarmUtils
 import sample.AppPreferences
 import sample.R
 import android.text.method.ScrollingMovementMethod
-
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
 
 
 class ADialogActivity : AppCompatActivity() {
     private lateinit var r: Ringtone
 
-    @RequiresApi(Build.VERSION_CODES.P)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //Remove title bar
@@ -32,27 +30,30 @@ class ADialogActivity : AppCompatActivity() {
         //Remove notification bar
         this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
         setContentView(R.layout.alarm_popup)
-        bg.setBackgroundColor(Color.BLACK)
-        bg.alpha = 0.8f
-        setShowWhenLocked(true)
-        setTurnScreenOn(true)
+        findViewById<View>(R.id.bg).setBackgroundColor(Color.BLACK)
+        findViewById<View>(R.id.bg).alpha = 0.8f
+        if(Build.VERSION.SDK_INT > 26) {
+            setShowWhenLocked(true)
+            setTurnScreenOn(true)
+        }
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON or WindowManager.LayoutParams.FLAG_ALLOW_LOCK_WHILE_SCREEN_ON)
         window.enterTransition = Fade()
         AppPreferences.init(this)
-        taskDescription.text = AppPreferences.descripcion+"\n"
+        findViewById<TextView>(R.id.taskDescription).text = AppPreferences.descripcion+"\n"
         val notification = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_ALARM)//Tono de la alarma
         r = RingtoneManager.getRingtone(this, notification)
         r.audioAttributes = AudioAttributes.Builder().setLegacyStreamType(STREAM_ALARM).build()
-        r.isLooping = true
+        if(Build.VERSION.SDK_INT > 27)
+            r.isLooping = true
         r.play()
-        taskDescription.movementMethod = ScrollingMovementMethod()
-        apBtn.setOnClickListener {
+        findViewById<TextView>(R.id.taskDescription).movementMethod = ScrollingMovementMethod()
+        findViewById<Button>(R.id.apBtn).setOnClickListener {
             r.stop()
             AlarmUtils.setNextAlarm(this, false)
             finish()
             overridePendingTransition(android.R.anim.fade_out, android.R.anim.fade_out)
         }
-        repBtn.setOnClickListener {
+        findViewById<Button>(R.id.repBtn).setOnClickListener {
             r.stop()
             AlarmUtils.repeatActual(this)
             AlarmUtils.setNextAlarm(this, false)
