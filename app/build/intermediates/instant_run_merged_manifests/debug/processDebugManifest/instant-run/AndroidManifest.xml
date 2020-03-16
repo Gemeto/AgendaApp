@@ -44,12 +44,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name="activities.ADialogActivity"
-            android:screenOrientation="portrait"
-            android:showOnLockScreen="true"
-            android:theme="@style/Theme.Transparent"
-            android:turnScreenOn="true" >
+        <activity android:name="activities.ADialogActivity" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
