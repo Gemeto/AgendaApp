@@ -38,6 +38,14 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     >
 
+                <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@android:drawable/ic_lock_idle_alarm"
+                        android:visibility="invisible"
+                        android:id="@+id/alarmIcon"
+                        />
+
                 <TextView
                         android:id="@+id/taskDate"
                         android:layout_width="match_parent"

@@ -11,7 +11,7 @@ private const val SQL_CREATE_ENTRIES =
             "beginTime TEXT," + //Formato: HH:MM
             "endTime TEXT," + //Formato: HH:MM
             "date TEXT," + //Formato: yyyy-MM-dd
-            "alarm INTEGER)"
+            "alarm INTEGER)" // 0 no suena la alarma y 1 si que suena
 
 private const val SQL_DELETE_ENTRIES = "DROP TABLE IF EXISTS TASK"
 

@@ -29,11 +29,11 @@ import kotlin.collections.ArrayList
 
 
 
-class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
+class RecyclerAdapter(private val tasks: ArrayList<Task>, val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
 
     override fun onBindViewHolder(holder: TasksHolder, position: Int) {
         val itemTask = tasks[position]
-        holder.bindTask(itemTask)
+        holder.bindTask(itemTask, orientation)
     }
 
     override fun getItemCount() = tasks.size
@@ -80,13 +80,14 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
                     .toBundle())
         }
 
-        fun bindTask(task: Task) {
+        fun bindTask(task: Task, orientation: Int) {
             this.task = task
             if(task.id=="-1") {
-                view.taskDate.text =
-                    CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
+                view.taskDate.textSize = 0F
             }else if(task.id=="-2"){
                 view.taskDescription.text = task.description
+                view.taskDate.text =
+                    CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
                 view.taskDescription.textSize = 20F
                 view.isClickable = false
                 view.findViewById<FrameLayout>(R.id.borderB).visibility = View.INVISIBLE
@@ -95,6 +96,8 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
                 view.taskDescription.text = task.description
                 var calendar = Calendar.getInstance(); calendar.time = task.date
                 view.taskDate.text = CalendarUtils.dateToString(calendar)
+                if(orientation == Configuration.ORIENTATION_LANDSCAPE)
+                    view.taskDate.textSize = 0F
                 var beginTime = Calendar.getInstance()
                 beginTime.time = task.beginTime
                 view.taskBeginTime.text = CalendarUtils.timeToString(beginTime)
