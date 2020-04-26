@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>app</OriginalElement>
+  <nodes>
+    <node x="174.0" y="1092.0">app.logic.utils.AlarmUtils</node>
+    <node x="265.5" y="320.0">app.ui.fragments.TimePickerFragment.TimePickerListener</node>
+    <node x="1250.0" y="0.0">app.logic.entities.Task</node>
+    <node x="967.5" y="318.0">app.logic.adapters.RecyclerAdapter.TasksHolder</node>
+    <node x="0.0" y="1363.0">app.logic.services.RestartAlarmsService</node>
+    <node x="31.5" y="331.0">app.ui.fragments.DatePickerFragment.DatePickerListener</node>
+    <node x="910.0" y="0.0">app.logic.adapters.RecyclerAdapter</node>
+    <node x="909.0" y="1092.0">app.logic.receivers.AlarmReceiver</node>
+    <node x="0.0" y="1092.0">app.logic.utils.RequestCode</node>
+    <node x="137.0" y="446.0">app.ui.activities.CreateTaskActivity</node>
+    <node x="0.0" y="0.0">app.ui.fragments.DatePickerFragment</node>
+    <node x="1076.0" y="717.0">app.logic.BDController</node>
+    <node x="81.5" y="993.0">app.bd.BDManager.Companion</node>
+    <node x="313.0" y="717.0">app.logic.callbacks.SwipeToDeleteCallback</node>
+    <node x="237.0" y="1363.0">app.bd.BDManagerKt</node>
+    <node x="642.0" y="1092.0">app.ui.activities.BuscadorActivity</node>
+    <node x="445.0" y="1092.0">app.ui.activities.ADialogActivity</node>
+    <node x="521.0" y="0.0">app.ui.activities.MainActivity</node>
+    <node x="1150.0" y="1092.0">app.logic.receivers.BootReceiver</node>
+    <node x="0.0" y="717.0">app.bd.BDManager</node>
+    <node x="804.0" y="717.0">app.logic.utils.CalendarUtils</node>
+    <node x="259.0" y="11.0">app.ui.fragments.TimePickerFragment</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="app.ui.activities.CreateTaskActivity" target="app.ui.fragments.DatePickerFragment.DatePickerListener">
+      <point x="-53.25" y="-113.0" />
+      <point x="190.25" y="421.0" />
+      <point x="119.5" y="421.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="app.ui.fragments.TimePickerFragment.TimePickerListener" target="app.ui.fragments.TimePickerFragment">
+      <point x="0.0" y="-38.0" />
+      <point x="0.0" y="124.0" />
+    </edge>
+    <edge source="app.bd.BDManager.Companion" target="app.bd.BDManager">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="113.0" />
+    </edge>
+    <edge source="app.logic.adapters.RecyclerAdapter.TasksHolder" target="app.logic.adapters.RecyclerAdapter">
+      <point x="0.0" y="-102.0" />
+      <point x="0.0" y="134.0" />
+    </edge>
+    <edge source="app.ui.fragments.DatePickerFragment.DatePickerListener" target="app.ui.fragments.DatePickerFragment">
+      <point x="0.0" y="-27.0" />
+      <point x="0.0" y="135.0" />
+    </edge>
+    <edge source="app.ui.activities.CreateTaskActivity" target="app.ui.fragments.TimePickerFragment.TimePickerListener">
+      <point x="53.25" y="-113.0" />
+      <point x="296.75" y="421.0" />
+      <point x="367.5" y="421.0" />
+      <point x="0.0" y="38.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.9713733075435206" x="722.4132391475076" y="1128.8555824075604" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

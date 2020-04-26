@@ -8,115 +8,28 @@
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="909fad37-78d8-4df5-b6d0-aa2ec2f900e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_3_72_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_annotations_common_1_3_72_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/Qy15y_kkSfIgQxgYUlPqavt_fGU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/ed4U3+BIGlBCupsXB83Z+Prxj3U=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/tJkVP96Mp0O9Nad6LgHjAv8ZacE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/Qy15y_kkSfIgQxgYUlPqavt_fGU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/ed4U3+BIGlBCupsXB83Z+Prxj3U=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/tJkVP96Mp0O9Nad6LgHjAv8ZacE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/Qy15y_kkSfIgQxgYUlPqavt_fGU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/ed4U3+BIGlBCupsXB83Z+Prxj3U=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/tJkVP96Mp0O9Nad6LgHjAv8ZacE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/Qy15y_kkSfIgQxgYUlPqavt_fGU=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/ed4U3+BIGlBCupsXB83Z+Prxj3U=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/tJkVP96Mp0O9Nad6LgHjAv8ZacE=" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/BDController.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/adapters/RecyclerAdapter$TasksHolder.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/adapters/RecyclerAdapter.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/entities/Task.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/receivers/AlarmReceiver.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/services/RestartAlarmsService.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/utils/AlarmUtils.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity$onCreate$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/AppPreferences.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$3.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$4.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$onCreate$thread$1$run$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$onCreate$thread$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshLandscapeView$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshLandscapeView$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshPortraitView$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshPortraitView$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/DatePickerFragment$DatePickerListener.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/DatePickerFragment.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/TimePickerFragment$TimePickerListener.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/TimePickerFragment.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/RequestCode.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/BDController.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/adapters/RecyclerAdapter$TasksHolder.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/adapters/RecyclerAdapter.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/entities/Task.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/receivers/AlarmReceiver.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/services/RestartAlarmsService.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/utils/AlarmUtils.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity$onCreate$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$3.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$4.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$onCreate$thread$1$run$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$onCreate$thread$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshLandscapeView$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshLandscapeView$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshPortraitView$1.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshPortraitView$2.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/DatePickerFragment$DatePickerListener.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/DatePickerFragment.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/TimePickerFragment$TimePickerListener.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/TimePickerFragment.dex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/BDController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity$onCreate$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity$onCreate$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$onCreate$thread$1$run$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$onCreate$thread$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshLandscapeView$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshPortraitView$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/DatePickerFragment$DatePickerListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/TimePickerFragment$TimePickerListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/BDController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity$onCreate$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity$onCreate$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$onCreate$thread$1$run$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$onCreate$thread$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshLandscapeView$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshPortraitView$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/DatePickerFragment$DatePickerListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/TimePickerFragment$TimePickerListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/AppPreferences.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/appC.uml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/fileHashes/resourceHashesCache.bin" afterDir="false" />
@@ -127,176 +40,122 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10/taskHistory/taskHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_41_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_72_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_41_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_3_72_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_41_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_1_3_41_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_annotations_common_1_3_41_jar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_common_1_3_41_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_common_1_3_72_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit_1_3_41_jar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_test_junit_1_3_72_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppBuena.app.commonMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppBuena.app.commonMain.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppBuena.app.commonTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppBuena.app.commonTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppBuena.app.iosMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppBuena.app.iosMain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/AppBuena.app.iosTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/AppBuena.app.iosTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/META-INF/app.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/META-INF/app.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/sample/Platform.kotlin_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/sample/Proxy.kotlin_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/sample/Sample.kotlin_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/classes/kotlin/metadata/main/sample/SampleKt.kotlin_metadata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/4U8u6gMHWVLgt_OO+gbNcXFu7fI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/6OZavGPA8AUcb2pJgWY2J9JUW+c=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJavaRes/zip-cache/A867c0GUiUKHZvdsMkr5YU0+QOk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/4U8u6gMHWVLgt_OO+gbNcXFu7fI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/6OZavGPA8AUcb2pJgWY2J9JUW+c=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/debug-mergeJniLibs/zip-cache/A867c0GUiUKHZvdsMkr5YU0+QOk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeReleaseResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/file-input-save-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/4pW1BzRg5ludVrYTtr0j__JVvDo=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/4pW1BzRg5ludVrYTtr0j__JVvDo=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/DKR6j6hxmAks3aOFjDsHUdk6AFE=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/tmp/debug/zip-cache/DKR6j6hxmAks3aOFjDsHUdk6AFE=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/dex-renamer-state.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/file-input-save-data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/file-input-save-data.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/zip-cache/Q8q5qYh_P5CYfEpO0Aye5z85sVs=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/zip-cache/Q8q5qYh_P5CYfEpO0Aye5z85sVs=" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/zip-cache/bZ_sbuxHENvqId+SW_CkN_Q8F4Q=" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/packageRelease/tmp/release/zip-cache/bZ_sbuxHENvqId+SW_CkN_Q8F4Q=" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/4U8u6gMHWVLgt_OO+gbNcXFu7fI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/6OZavGPA8AUcb2pJgWY2J9JUW+c=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJavaRes/zip-cache/A867c0GUiUKHZvdsMkr5YU0+QOk=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/merge-state" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/4U8u6gMHWVLgt_OO+gbNcXFu7fI=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/6OZavGPA8AUcb2pJgWY2J9JUW+c=" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/release-mergeJniLibs/zip-cache/A867c0GUiUKHZvdsMkr5YU0+QOk=" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/debug/processDebugManifest/merged/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/merged_manifests/release/processReleaseManifest/merged/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/processDebugResources/out/resources-debug.ap_" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/release/processReleaseResources/out/resources-release.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/release/processReleaseResources/out/resources-release.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/ADialogActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/ADialogActivity$onCreate$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/ADialogActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/BuscadorActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/BuscadorActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/CreateTaskActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/CreateTaskActivity$onCreate$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/CreateTaskActivity$onCreate$3.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/CreateTaskActivity$onCreate$4.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/activities/CreateTaskActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/adapters/RecyclerAdapter$TasksHolder.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/adapters/RecyclerAdapter.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager$Companion.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager$Companion.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManagerKt.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManagerKt.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/callbacks/SwipeToDeleteCallback.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/callbacks/SwipeToDeleteCallback.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/fragments/DatePickerFragment$DatePickerListener.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/fragments/DatePickerFragment.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/fragments/TimePickerFragment$TimePickerListener.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/fragments/TimePickerFragment.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/receivers/AlarmReceiver.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/receivers/BootReceiver.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/receivers/BootReceiver.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/AppPreferences.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$onCreate$thread$1$run$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$onCreate$thread$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$refreshLandscapeView$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$refreshLandscapeView$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$refreshPortraitView$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity$refreshPortraitView$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/MainActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/Platform.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/Proxy.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/RequestCode.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/Sample.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/SampleKt.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/sample/Task.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/services/RestartAlarmsService.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/AlarmUtils.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/BDUtils.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/CalendarUtils.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/CalendarUtils.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/ADialogActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/ADialogActivity$onCreate$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/ADialogActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/BuscadorActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/BuscadorActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/CreateTaskActivity$onCreate$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/CreateTaskActivity$onCreate$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/CreateTaskActivity$onCreate$3.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/CreateTaskActivity$onCreate$4.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/activities/CreateTaskActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/adapters/RecyclerAdapter$TasksHolder.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/adapters/RecyclerAdapter.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager$Companion.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager$Companion.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManagerKt.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManagerKt.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/callbacks/SwipeToDeleteCallback.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/callbacks/SwipeToDeleteCallback.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/fragments/DatePickerFragment$DatePickerListener.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/fragments/DatePickerFragment.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/fragments/TimePickerFragment$TimePickerListener.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/fragments/TimePickerFragment.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/receivers/AlarmReceiver.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/receivers/BootReceiver.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/receivers/BootReceiver.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/AppPreferences.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/AppPreferences.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$onCreate$thread$1$run$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$onCreate$thread$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$refreshLandscapeView$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$refreshLandscapeView$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$refreshPortraitView$1.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity$refreshPortraitView$2.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/MainActivity.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/Platform.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/Proxy.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/RequestCode.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/RequestCode.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/Sample.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/SampleKt.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/sample/Task.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/services/RestartAlarmsService.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/AlarmUtils.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/BDUtils.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/CalendarUtils.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/CalendarUtils.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager$Companion.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManager.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/bd/BDManagerKt.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/BDController.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/adapters/RecyclerAdapter$TasksHolder.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/adapters/RecyclerAdapter.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/callbacks/SwipeToDeleteCallback.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/entities/Task.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/receivers/AlarmReceiver.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/receivers/BootReceiver.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/services/RestartAlarmsService.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/logic/utils/AlarmUtils.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity$onCreate$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/ADialogActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/AppPreferences.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/BuscadorActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity$onCreate$4.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/CreateTaskActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$onCreate$thread$1$run$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$onCreate$thread$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshLandscapeView$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshLandscapeView$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshPortraitView$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity$refreshPortraitView$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/activities/MainActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/DatePickerFragment$DatePickerListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/DatePickerFragment.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/TimePickerFragment$TimePickerListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/ui/fragments/TimePickerFragment.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/CalendarUtils.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/debug/44/utils/RequestCode.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager$Companion.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManager.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/bd/BDManagerKt.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/BDController.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/adapters/RecyclerAdapter$TasksHolder.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/adapters/RecyclerAdapter.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/callbacks/SwipeToDeleteCallback.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/entities/Task.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/receivers/AlarmReceiver.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/receivers/BootReceiver.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/services/RestartAlarmsService.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/logic/utils/AlarmUtils.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity$onCreate$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/ADialogActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/AppPreferences.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/BuscadorActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$3.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity$onCreate$4.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/CreateTaskActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$onCreate$thread$1$run$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$onCreate$thread$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshLandscapeView$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshLandscapeView$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshPortraitView$1.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity$refreshPortraitView$2.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/activities/MainActivity.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/DatePickerFragment$DatePickerListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/DatePickerFragment.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/TimePickerFragment$TimePickerListener.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/ui/fragments/TimePickerFragment.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/CalendarUtils.dex" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexBuilder/release/44/utils/RequestCode.dex" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/1/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/debug/2/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/release/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/release/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/release/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/dexMerger/release/__content__.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/debug/0/classes.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/release/0/classes.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/externalLibsDexMerger/release/0/classes.dex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/release/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/release/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/release/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/transforms/mergeJavaRes/release/__content__.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/inputs/source-to-output.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab_i.len" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" afterDir="false" />
@@ -305,24 +164,20 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/package-parts.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/proto.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/source-to-classes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileDebugKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
@@ -363,22 +218,14 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.keystream" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.keystream.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.len" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab.values.at" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab_i" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/complementary-files.tab_i.len" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.keystream.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.len" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/constants.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/inline-functions.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
@@ -406,6 +253,7 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/subtypes.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/supertypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/jvm/kotlin/supertypes.tab" afterDir="false" />
@@ -431,119 +279,113 @@
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.keystream" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.keystream.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab_i.len" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/caches-jvm/lookups/lookups.tab_i.len" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/kotlin/compileReleaseKotlinAndroid/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/libs/app-metadata.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/libs/app-metadata.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/Agendapp.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/debug/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/release/app-release-unsigned.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/apk/release/app-release-unsigned.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-release-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/reports/lint-results-release-fatal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/META-INF/app_debug.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/ADialogActivity$onCreate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/ADialogActivity$onCreate$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/ADialogActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/BuscadorActivity$onCreate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity$onCreate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/BuscadorActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/CreateTaskActivity$onCreate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/CreateTaskActivity$onCreate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/CreateTaskActivity$onCreate$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/CreateTaskActivity$onCreate$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/activities/CreateTaskActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/adapters/RecyclerAdapter$TasksHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/adapters/RecyclerAdapter$TasksHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/adapters/RecyclerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/adapters/RecyclerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManagerKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManagerKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/callbacks/SwipeToDeleteCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/callbacks/SwipeToDeleteCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/fragments/DatePickerFragment$DatePickerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/fragments/DatePickerFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/DatePickerFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/fragments/TimePickerFragment$TimePickerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/fragments/TimePickerFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/TimePickerFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/receivers/AlarmReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/receivers/AlarmReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/receivers/BootReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/receivers/BootReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/AppPreferences.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/AppPreferences.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$onCreate$thread$1$run$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$onCreate$thread$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$refreshLandscapeView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshLandscapeView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$refreshLandscapeView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$refreshPortraitView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshPortraitView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity$refreshPortraitView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/MainActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/Platform.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/Proxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/RequestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/RequestCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/Sample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/SampleKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/sample/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/entities/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/services/RestartAlarmsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/services/RestartAlarmsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/AlarmUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/utils/AlarmUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/BDUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/CalendarUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/CalendarUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/bd/BDManagerKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/BDController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/adapters/RecyclerAdapter$TasksHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/adapters/RecyclerAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/callbacks/SwipeToDeleteCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/entities/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/receivers/AlarmReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/receivers/BootReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/services/RestartAlarmsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/logic/utils/AlarmUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity$onCreate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/ADialogActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/AppPreferences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity$onCreate$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/CreateTaskActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$onCreate$thread$1$run$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$onCreate$thread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshLandscapeView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshLandscapeView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshPortraitView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshPortraitView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/DatePickerFragment$DatePickerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/DatePickerFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/TimePickerFragment$TimePickerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/fragments/TimePickerFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/CalendarUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/utils/RequestCode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/META-INF/app_release.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/META-INF/app_release.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/ADialogActivity$onCreate$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/ADialogActivity$onCreate$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/ADialogActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/BuscadorActivity$onCreate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/BuscadorActivity$onCreate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/BuscadorActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/CreateTaskActivity$onCreate$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/CreateTaskActivity$onCreate$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/CreateTaskActivity$onCreate$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/CreateTaskActivity$onCreate$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/activities/CreateTaskActivity.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/adapters/RecyclerAdapter$TasksHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/adapters/RecyclerAdapter$TasksHolder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/adapters/RecyclerAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/adapters/RecyclerAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager$Companion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManagerKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManagerKt.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/callbacks/SwipeToDeleteCallback.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/callbacks/SwipeToDeleteCallback.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/fragments/DatePickerFragment$DatePickerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/fragments/DatePickerFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/DatePickerFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/fragments/TimePickerFragment$TimePickerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/fragments/TimePickerFragment.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/TimePickerFragment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/receivers/AlarmReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/receivers/AlarmReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/receivers/BootReceiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/receivers/BootReceiver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/AppPreferences.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/AppPreferences.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$onCreate$thread$1$run$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$onCreate$thread$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$refreshLandscapeView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshLandscapeView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$refreshLandscapeView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$refreshPortraitView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/debug/ui/activities/MainActivity$refreshPortraitView$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity$refreshPortraitView$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/MainActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/Platform.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/Proxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/RequestCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/RequestCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/Sample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/SampleKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/sample/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/entities/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/services/RestartAlarmsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/services/RestartAlarmsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/AlarmUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/utils/AlarmUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/BDUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/CalendarUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/CalendarUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/commonMain/kotlin/sample/Sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/commonMain/kotlin/sample/Sample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager$Companion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/bd/BDManagerKt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/BDController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/adapters/RecyclerAdapter$TasksHolder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/adapters/RecyclerAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/callbacks/SwipeToDeleteCallback.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/entities/Task.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/receivers/AlarmReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/receivers/BootReceiver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/services/RestartAlarmsService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/logic/utils/AlarmUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity$onCreate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/ADialogActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/AppPreferences.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/BuscadorActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity$onCreate$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/CreateTaskActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$addSwipeToDeleteFromList$swipeHandler$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$onCreate$thread$1$run$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$onCreate$thread$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshLandscapeView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshLandscapeView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshPortraitView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity$refreshPortraitView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/activities/MainActivity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/DatePickerFragment$DatePickerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/DatePickerFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/TimePickerFragment$TimePickerListener.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/ui/fragments/TimePickerFragment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/CalendarUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/tmp/kotlin-classes/release/utils/RequestCode.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/activities/ADialogActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/activities/ADialogActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/activities/BuscadorActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/activities/BuscadorActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/activities/CreateTaskActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/activities/CreateTaskActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/adapters/RecyclerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/adapters/RecyclerAdapter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/callbacks/SwipeToDeleteCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/callbacks/SwipeToDeleteCallback.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fragments/DatePickerFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/fragments/DatePickerFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/fragments/TimePickerFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/fragments/TimePickerFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/receivers/AlarmReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/receivers/AlarmReceiver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/receivers/BootReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/receivers/BootReceiver.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/sample/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ui/activities/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/sample/RequestCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/utils/RequestCode.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/sample/Task.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/entities/Task.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/services/RestartAlarmsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/services/RestartAlarmsService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/utils/AlarmUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/utils/AlarmUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/utils/BDUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/BDController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/utils/CalendarUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/logic/utils/CalendarUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/bd/BDManager.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/bd/BDManager.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/BDController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/BDController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/adapters/RecyclerAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/adapters/RecyclerAdapter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/callbacks/SwipeToDeleteCallback.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/callbacks/SwipeToDeleteCallback.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/entities/Task.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/entities/Task.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/receivers/AlarmReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/receivers/AlarmReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/receivers/BootReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/receivers/BootReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/services/RestartAlarmsService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/services/RestartAlarmsService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/utils/AlarmUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/utils/AlarmUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/utils/CalendarUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/utils/CalendarUtils.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/logic/utils/RequestCode.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/logic/utils/RequestCode.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/activities/ADialogActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/activities/ADialogActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/activities/BuscadorActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/activities/BuscadorActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/activities/CreateTaskActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/activities/CreateTaskActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/activities/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/activities/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/fragments/DatePickerFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/fragments/DatePickerFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ui/fragments/TimePickerFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/app/ui/fragments/TimePickerFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -574,9 +416,9 @@
         <option value="valueResourceFile" />
         <option value="Class" />
         <option value="layoutResourceFile_vertical" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="resourceFile" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -593,22 +435,34 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="device.picker.selection" value="Pixel_API_23" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/java/sample" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/logic" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\java\activities" />
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\commonMain\kotlin\sample\activities" />
-      <recent name="D:\IdeaProjects\AppBuena\app\src\main\res\transition" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\java\app" />
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\java\logic" />
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\drawable" />
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\layout-v21" />
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\layout-land" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
       <recent name="sample" />
@@ -624,12 +478,10 @@
       <recent name="" />
       <recent name="sample" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\java\logic" />
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\drawable" />
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\layout-v21" />
-      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\res\layout-land" />
-      <recent name="D:\IdeaProjects\AppBuena\app\src\main\res\layout-v21" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\main\java\activities" />
+      <recent name="C:\Users\skait\Desktop\GitClones\AgendaApp\app\src\commonMain\kotlin\sample\activities" />
+      <recent name="D:\IdeaProjects\AppBuena\app\src\main\res\transition" />
     </key>
   </component>
   <component name="RunManager">
@@ -656,7 +508,7 @@
         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="ui.activities.MainActivity" />
+      <option name="ACTIVITY_CLASS" value="app.ui.activities.MainActivity" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -700,8 +552,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581682686722</updated>
+      <workItem from="1587930042154" duration="1465000" />
+      <workItem from="1587931546394" duration="5104000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -719,18 +576,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587757455718">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587931267812">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587757455718" />
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587757453221">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587931267812" />
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587931266072">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587757453221" />
-    <state x="610" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587921034182">
+    <state x="689" y="310" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587931266072" />
+    <state x="610" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1587930690550">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587921034182" />
+    <state x="610" y="444" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587930690550" />
     <state x="756" y="401" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1587909935721">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -739,14 +596,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="698" y="298" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1587921321536" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1587861873243">
+    <state x="740" y="261" key="FileChooserDialogImpl" timestamp="1587933405702">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587861873243" />
+    <state x="740" y="261" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1587933405702" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1587931530044">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1587931530044" />
+    <state x="426" y="254" width="956" height="554" key="net.trustx.simpleuml.components.BirdViewFrame" timestamp="1587932531179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="426" y="254" width="956" height="554" key="net.trustx.simpleuml.components.BirdViewFrame/0.0.1920.1040@0.0.1920.1040" timestamp="1587932531179" />
     <state x="342" y="140" key="new project wizard" timestamp="1587829999688">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="342" y="140" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1587829999688" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587929244296">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1587929244296" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

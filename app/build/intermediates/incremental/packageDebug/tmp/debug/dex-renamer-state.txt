@@ -1,10 +1,10 @@
-#Sun Apr 26 19:36:59 CEST 2020
+#Sun Apr 26 23:15:00 CEST 2020
+base.2=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.2=classes.dex
+base.1=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 path.1=classes.dex
-path.0=classes.dex
+base.0=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-base.1=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
-base.0=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+path.0=classes.dex
