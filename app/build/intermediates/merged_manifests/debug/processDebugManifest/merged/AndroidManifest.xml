@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="sample.MainActivity"
+            android:name="ui.activities.MainActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="activities.CreateTaskActivity"
+            android:name="ui.activities.CreateTaskActivity"
             android:configChanges="orientation|screenSize|keyboardHidden" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
@@ -36,7 +36,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="activities.BuscadorActivity" >
+        <activity android:name="ui.activities.BuscadorActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.SEARCH" />
 
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="activities.ADialogActivity"
+            android:name="ui.activities.ADialogActivity"
             android:showWhenLocked="true"
             android:turnScreenOn="true" >
             <intent-filter>
@@ -53,12 +53,12 @@
         </activity>
 
         <receiver
-            android:name="receivers.AlarmReceiver"
+            android:name="logic.receivers.AlarmReceiver"
             android:enabled="true"
             android:exported="true" >
         </receiver>
         <receiver
-            android:name="receivers.BootReceiver"
+            android:name="logic.receivers.BootReceiver"
             android:enabled="true"
             android:exported="true" >
             <intent-filter>
@@ -71,7 +71,7 @@
         </receiver>
 
         <service
-            android:name="services.RestartAlarmsService"
+            android:name="logic.services.RestartAlarmsService"
             android:enabled="true"
             android:exported="true" />
     </application>

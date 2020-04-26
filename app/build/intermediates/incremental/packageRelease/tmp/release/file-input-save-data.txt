@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Tue Apr 14 15:09:19 CEST 2020
+#Sun Apr 26 16:03:03 CEST 2020
+0.baseType=DIRECTORY
 0.base=C\:\\Users\\skait\\Desktop\\GitClones\\AgendaApp\\app\\build\\intermediates\\transforms\\dexMerger\\release\\0
 0.path=classes.dex
-count=1
-0.baseType=DIRECTORY
 0.set=DEX
+count=1
