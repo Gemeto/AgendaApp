@@ -61,6 +61,34 @@
                 android:id="@+id/ringAlarm"
                 android:text="Hacer sonar alarma"
                 />
+        <RadioGroup
+                android:id="@+id/priority"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                >
+            <RadioButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Sin más"
+                    android:textSize="15dp"
+                    android:id="@+id/a">
+            </RadioButton>
+            <RadioButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Importante"
+                    android:textSize="15dp"
+                    android:id="@+id/b">
+            </RadioButton>
+            <RadioButton
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Muy importante"
+                    android:textSize="15dp"
+                    android:id="@+id/c">
+            </RadioButton>
+        </RadioGroup>
     </TableLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

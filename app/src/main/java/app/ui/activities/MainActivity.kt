@@ -28,27 +28,7 @@ import app.logic.utils.CalendarUtils
 
 class MainActivity : AppCompatActivity() {
     lateinit var date: Calendar
-    private val MIN_DISTANCE_TO_SLIDE = 150
-    private var x1: Float = 0.toFloat()
-    var x2: Float = 0.toFloat()
-
-    override fun onTouchEvent(event: MotionEvent): Boolean {
-        when (event.action) {
-            MotionEvent.ACTION_DOWN -> x1 = event.x
-            MotionEvent.ACTION_UP -> {
-                x2 = event.x
-                val deltaX = x2 - x1
-                if (deltaX > MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    date = CalendarUtils.pastWeek(date)
-                    refreshLandscapeView()
-                } else if (deltaX < MIN_DISTANCE_TO_SLIDE && resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    date = CalendarUtils.nextWeek(date)
-                    refreshLandscapeView()
-                }
-            }
-        }
-        return super.onTouchEvent(event)
-    }
+    var differenceInWeeks = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -138,9 +118,19 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CreateTaskActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().create_task, null)
         }
-        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {
+        findViewById<FloatingActionButton>(R.id.floatingActionButton).setOnClickListener {//SEARCH BUTTON TO OPEN SEARCH ACTIVITY
             val intent = Intent(this, BuscadorActivity::class.java)
             ActivityCompat.startActivityForResult(this as Activity, intent, RequestCode().search, null)
+        }
+        findViewById<FloatingActionButton>(R.id.Future).setOnClickListener {//SEE NEXT WEEK
+            date = CalendarUtils.nextWeek(date)
+            differenceInWeeks+=1;
+            refreshLandscapeView()
+        }
+        findViewById<FloatingActionButton>(R.id.Past).setOnClickListener {//SEE PAST WEEK
+            date = CalendarUtils.pastWeek(date)
+            differenceInWeeks-=1;
+            refreshLandscapeView()
         }
     }
 
@@ -184,58 +174,77 @@ class MainActivity : AppCompatActivity() {
                 longer=i
         }
         val array = ArrayList<Task>()
+        val c = Calendar.getInstance()
+        c.firstDayOfWeek = Calendar.MONDAY
+        c.time = date.time
+        var dow = 2//No se porque el dia 2 es Lunes en realidad
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Lunes",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(0))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow++
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Martes",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(1))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow++
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Miercoles",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(2))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow++
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Jueves",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(3))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow++
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Viernes",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(4))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow=0//Sabado y domingo son los dias 0 y 1
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Sábado",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(5))
+                CalendarUtils.dateToString(c)
             )
         )
+        dow++
+        c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
                 "-2",
                 "Domingo",
-                CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(6))
+                CalendarUtils.dateToString(c)
             )
         )
 
-        for(j in 0 until if(l[longer].size < 7) 7 else l[longer].size) {
-             for (i in 0 until l.size) {
+        val minTasks = 7//Si pasa de 7 se buguea la lista al hacer scroll
+        for(j in 0 until if(l[longer].size < minTasks) minTasks else l[longer].size) {//Ademas de introducir las tareas ya creadas metemos algunas en blanco para rellenar hasta 7 filas
+            for (i in 0 until l.size) {
+                 c.set(Calendar.DAY_OF_WEEK, i)
                 if(l[i].size>j && l[i].size>0){
                     array.add(l[i][j])
                 }else{
@@ -243,7 +252,7 @@ class MainActivity : AppCompatActivity() {
                         Task(
                             "-1",
                             "",
-                            CalendarUtils.dateToString(CalendarUtils.actualWeekInDay(i))
+                            CalendarUtils.dateToString(c)
                         )
                     )
                 }

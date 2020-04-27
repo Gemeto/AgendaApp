@@ -1,19 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
                                                  xmlns:tools="http://schemas.android.com/tools"
                                                  android:layout_width="match_parent"
                                                  android:layout_height="match_parent"
                                                  android:fitsSystemWindows="true"
-                                                 tools:context="MainActivity">
+                                                 tools:context="app.ui.activities.MainActivity">
+
+    <TextView
+            android:textSize="12dp"
+            android:id="@+id/text"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@color/design_default_color_primary_dark"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_gravity="top"
+            tools:ignore="RtlCompat">
+
+    </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/darker_gray"
+            android:nestedScrollingEnabled="true"
             />
-
 
     <TableLayout
             android:layout_width="wrap_content"
@@ -32,16 +44,24 @@
                 android:id="@+id/addTask"/>
     </TableLayout>
 
-    <TextView
-            android:textSize="12dp"
-            android:id="@+id/text"
+    <TableLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:background="@color/design_default_color_primary_dark"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_gravity="top">
+            android:layout_gravity="bottom|left"
+            >
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="90"
+                android:src="@android:drawable/arrow_down_float"
+                android:id="@+id/Past"/>
 
-    </TextView>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:rotation="270"
+                android:src="@android:drawable/arrow_down_float"
+                android:id="@+id/Future"/>
+    </TableLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -45,9 +45,10 @@ object CalendarUtils {
         return c
     }
 
-    fun actualWeekInDay(day: Int):Calendar{
+    fun actualWeekInDay(day: Int, differenceInWeeks: Int):Calendar{
         val c = Calendar.getInstance()
         c.firstDayOfWeek = Calendar.MONDAY
+        c.set(Calendar.DAY_OF_MONTH, c.get(Calendar.DAY_OF_MONTH)+differenceInWeeks*7)
         var dow = 0
         when(day){
             0 -> dow = Calendar.MONDAY

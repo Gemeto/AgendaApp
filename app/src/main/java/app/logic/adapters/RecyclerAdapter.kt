@@ -5,7 +5,9 @@ import android.app.Activity
 import android.app.ActivityOptions
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.content.res.Configuration
+import android.graphics.Color
 import android.util.Log
 import android.util.Pair
 import android.view.LayoutInflater
@@ -13,7 +15,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.FrameLayout
 import android.widget.ImageView
+import android.widget.RadioButton
 import android.widget.TextView
+import androidx.coordinatorlayout.widget.CoordinatorLayout
 import androidx.core.app.ActivityCompat.startActivityForResult
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.cardview_task_in_agenda.view.*
@@ -22,12 +26,13 @@ import sample.R
 import app.logic.utils.RequestCode
 import app.logic.entities.Task
 import app.logic.BDController
+import com.google.android.material.card.MaterialCardView
 import java.util.*
 import kotlin.collections.ArrayList
 
 
 
-class RecyclerAdapter(private val tasks: ArrayList<Task>, val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
+class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientation: Int) : RecyclerView.Adapter<RecyclerAdapter.TasksHolder>() {
 
     override fun onBindViewHolder(holder: TasksHolder, position: Int) {
         val itemTask = tasks[position]
@@ -68,6 +73,7 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, val orientation: Int) 
                 putExtra("endTime", textEndTime.text.toString())
                 putExtra("taskId", task?.id)
                 putExtra("alarm", task?.alarm)
+                putExtra("priority", task?.priority)
                 putExtra("requestCode", RequestCode().modify_task.toString())
             }
             startActivityForResult(context as Activity, intent, if(task?.id!="-1") RequestCode().modify_task
@@ -80,17 +86,19 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, val orientation: Int) 
 
         fun bindTask(task: Task, orientation: Int) {
             this.task = task
-            if(task.id=="-1") {
+            if(task.id=="-1") {//Tareas vacias para rellenar en la vista semanal
                 view.taskDate.textSize = 0F
-            }else if(task.id=="-2"){
+                var calendar = Calendar.getInstance(); calendar.time = task.date
+                view.taskDate.text = CalendarUtils.dateToString(calendar)
+            }else if(task.id=="-2"){//Tareas para mostrar el dia de la semana como cabecera en la tabla
                 view.taskDescription.text = task.description
                 view.taskDate.text =
                     CalendarUtils.dateToString(Calendar.getInstance().apply { time = task.date })
-                view.taskDescription.textSize = 20F
+                view.taskDescription.textSize = 17F
                 view.isClickable = false
-                view.findViewById<FrameLayout>(R.id.borderB).visibility = View.INVISIBLE
+                //view.findViewById<FrameLayout>(R.id.borderB).visibility = View.INVISIBLE
                 view.findViewById<FrameLayout>(R.id.borderR).visibility = View.INVISIBLE
-            }else{
+            }else{//Tareas
                 view.taskDescription.text = task.description
                 var calendar = Calendar.getInstance(); calendar.time = task.date
                 view.taskDate.text = CalendarUtils.dateToString(calendar)
@@ -104,6 +112,12 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, val orientation: Int) 
                 view.taskEndTime.text = CalendarUtils.timeToString(endTime)
                 if(task.alarm == 1)
                     view.findViewById<ImageView>(R.id.alarmIcon).visibility = View.VISIBLE
+
+                if(task.priority == 2131230828)
+                    view.findViewById<MaterialCardView>(R.id.bg).backgroundTintList = ColorStateList.valueOf(Color.CYAN)
+
+                if(task.priority == 2131230974)
+                    view.findViewById<MaterialCardView>(R.id.bg).backgroundTintList = ColorStateList.valueOf(Color.YELLOW)
             }
         }
     }

@@ -5,10 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.transition.*
 import android.view.WindowManager
-import android.widget.Button
-import android.widget.CheckBox
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import app.ui.fragments.DatePickerFragment
 import app.ui.fragments.TimePickerFragment
@@ -30,6 +27,7 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
             findViewById<Button>(R.id.taskBeginTime).text = intent.getStringExtra("beginTime")
             findViewById<Button>(R.id.taskEndTime).text = intent.getStringExtra("endTime")
             findViewById<CheckBox>(R.id.ringAlarm).isChecked = intent.getIntExtra("alarm", 0) != 0
+            findViewById<RadioGroup>(R.id.priority).check(intent.getIntExtra("priority", 2))
         }
         val transition:Transition = TransitionInflater.from(this).inflateTransition(R.transition.change_image_transform)
         window.sharedElementEnterTransition = transition
@@ -80,6 +78,7 @@ class CreateTaskActivity : AppCompatActivity(), TimePickerFragment.TimePickerLis
                 result.putExtra("taskBeginTime", taskBeginTime.text.toString())
                 result.putExtra("taskEndTime", taskEndTime.text.toString())
                 result.putExtra("alarm", ringAlarm.isChecked)
+                result.putExtra("priority", priority.checkedRadioButtonId)
                 setResult(Activity.RESULT_OK, result)
                 finish()
                 overridePendingTransition(android.R.anim.slide_out_right, android.R.anim.slide_out_right)

@@ -77,7 +77,8 @@ class BDController {
                     cursor.getString(4),
                     cursor.getString(2),
                     cursor.getString(3),
-                    cursor.getInt(5)
+                    cursor.getInt(5),
+                    cursor.getInt(6)
                 )
                 break
             }
@@ -111,6 +112,8 @@ class BDController {
                             CalendarUtils.nextWeek(calendar)
                         )
                     )
+                    put("alarm", 1)
+                    put("priority", cursor.getString(6))
                 })
             }
         }
@@ -138,7 +141,8 @@ class BDController {
                         cursor.getString(4),
                         cursor.getString(2),
                         cursor.getString(3),
-                        cursor.getInt(5)
+                        cursor.getInt(5),
+                        cursor.getInt(6)
                     )
                 )
             }
@@ -168,7 +172,8 @@ class BDController {
                         cursor.getString(4),
                         cursor.getString(2),
                         cursor.getString(3),
-                        cursor.getInt(5)
+                        cursor.getInt(5),
+                        cursor.getInt(6)
                     )
                 )
             }
@@ -203,7 +208,8 @@ class BDController {
                     cursor.getString(4),
                     cursor.getString(2),
                     cursor.getString(3),
-                    cursor.getInt(5)
+                    cursor.getInt(5),
+                    cursor.getInt(6)
                 )
                 val calendar: Calendar = Calendar.getInstance()
                 calendar.time = task.date
@@ -232,6 +238,7 @@ class BDController {
             put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
             put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
             put("alarm", ((data.extras as Bundle)["alarm"] as Any) as Boolean)
+            put("priority", ((data.extras as Bundle)["priority"] as Any) as Int)
         }
         if (requestCode == RequestCode().create_task) {
             // Insertamos la tarea en la base de datos
