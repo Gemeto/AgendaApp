@@ -1211,6 +1211,7 @@ id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
 id navigation_header_container
+id nestedScrollView
 id never
 id none
 id normal

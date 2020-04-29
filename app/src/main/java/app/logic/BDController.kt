@@ -3,6 +3,7 @@ package app.logic
 import android.content.ContentValues
 import android.content.Context
 import android.content.Intent
+import android.icu.text.UnicodeSet.CASE
 import android.os.Bundle
 import app.bd.BDManager
 import app.logic.entities.Task
@@ -238,7 +239,12 @@ class BDController {
             put("endTime", ((data.extras as Bundle)["taskEndTime"] as Any).toString())
             put("date", ((data.extras as Bundle)["taskDate"] as Any).toString())
             put("alarm", ((data.extras as Bundle)["alarm"] as Any) as Boolean)
-            put("priority", ((data.extras as Bundle)["priority"] as Any) as Int)
+            when (((data.extras as Bundle)["priority"] as Any).toString()) {
+                "Importante" -> put("priority", 2)
+                "Muy importante" -> put("priority", 3)
+                else -> put("priority", 1)
+        }
+
         }
         if (requestCode == RequestCode().create_task) {
             // Insertamos la tarea en la base de datos

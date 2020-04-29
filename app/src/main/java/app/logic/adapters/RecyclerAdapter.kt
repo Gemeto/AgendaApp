@@ -113,10 +113,10 @@ class RecyclerAdapter(private val tasks: ArrayList<Task>, private val orientatio
                 if(task.alarm == 1)
                     view.findViewById<ImageView>(R.id.alarmIcon).visibility = View.VISIBLE
 
-                if(task.priority == 2131230828)
+                if(task.priority == 2)
                     view.findViewById<MaterialCardView>(R.id.bg).backgroundTintList = ColorStateList.valueOf(Color.CYAN)
 
-                if(task.priority == 2131230974)
+                if(task.priority == 3)
                     view.findViewById<MaterialCardView>(R.id.bg).backgroundTintList = ColorStateList.valueOf(Color.YELLOW)
             }
         }

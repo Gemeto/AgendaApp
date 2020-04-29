@@ -19,7 +19,7 @@
 
         <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:id="@+id/cardBg"
                 xmlns:app="http://schemas.android.com/tools"
                 >
@@ -27,9 +27,18 @@
             <TableLayout
                     android:id="@+id/table"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     app:layout_constraintBottom_toBottomOf="parent"
+                    android:stretchColumns="0, 1"
                     >
+
+                <ImageView
+                        android:layout_width="10dp"
+                        android:layout_height="10dp"
+                        android:src="@android:drawable/ic_lock_idle_alarm"
+                        android:visibility="invisible"
+                        android:id="@+id/alarmIcon"
+                        />
 
                 <TextView
                         android:id="@+id/taskDate"
@@ -62,14 +71,6 @@
                             android:autoSizeTextType="uniform"
                             android:clickable="false"
                             android:textAlignment="center"
-                            />
-
-                    <ImageView
-                            android:layout_width="10dp"
-                            android:layout_height="10dp"
-                            android:src="@android:drawable/ic_lock_idle_alarm"
-                            android:visibility="invisible"
-                            android:id="@+id/alarmIcon"
                             />
 
                     <TextView

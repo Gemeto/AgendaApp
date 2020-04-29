@@ -110,7 +110,9 @@ class MainActivity : AppCompatActivity() {
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val manager = GridLayoutManager(this, 7,RecyclerView.VERTICAL, false)//Manager en modo landscape
         rV.layoutManager = manager
-        rV.adapter = RecyclerAdapter(obtenerLista(list), Configuration.ORIENTATION_LANDSCAPE)
+        var adpter = RecyclerAdapter(obtenerLista(list), Configuration.ORIENTATION_LANDSCAPE)
+        adpter.setHasStableIds(true)
+        rV.adapter = adpter
         addSwipeToDeleteFromList()
         refreshPendingTasks()
         //CLICK ADD BUTTON TO OPEN ADD TASK ACTIVITY
@@ -177,7 +179,7 @@ class MainActivity : AppCompatActivity() {
         val c = Calendar.getInstance()
         c.firstDayOfWeek = Calendar.MONDAY
         c.time = date.time
-        var dow = 2//No se porque el dia 2 es Lunes en realidad
+        var dow = 2
         c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
@@ -222,7 +224,7 @@ class MainActivity : AppCompatActivity() {
                 CalendarUtils.dateToString(c)
             )
         )
-        dow=0//Sabado y domingo son los dias 0 y 1
+        dow=0
         c.set(Calendar.DAY_OF_WEEK, dow)
         array.add(
             Task(
@@ -241,10 +243,13 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        val minTasks = 7//Si pasa de 7 se buguea la lista al hacer scroll
-        for(j in 0 until if(l[longer].size < minTasks) minTasks else l[longer].size) {//Ademas de introducir las tareas ya creadas metemos algunas en blanco para rellenar hasta 7 filas
+        val maxTasksInLand = 100
+        for(j in 0 until maxTasksInLand) {
             for (i in 0 until l.size) {
-                 c.set(Calendar.DAY_OF_WEEK, i)
+                if(i>4)
+                    c.set(Calendar.DAY_OF_WEEK, i-5)
+                else
+                    c.set(Calendar.DAY_OF_WEEK, i+2)
                 if(l[i].size>j && l[i].size>0){
                     array.add(l[i][j])
                 }else{
