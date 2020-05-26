@@ -1066,7 +1066,6 @@ id META
 id Past
 id SHIFT
 id SYM
-id a
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1128,7 +1127,6 @@ id always
 id apBtn
 id async
 id auto
-id b
 id barrier
 id beginning
 id bg
@@ -1138,7 +1136,6 @@ id boton
 id bottom
 id buscador
 id buttonPanel
-id c
 id cardBg
 id center
 id center_horizontal
@@ -1307,6 +1304,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id todas
 id top
 id topPanel
 id touch_outside

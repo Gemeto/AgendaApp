@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import android.os.Bundle
 import android.widget.Button
+import android.widget.RadioGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.ItemTouchHelper
 import androidx.recyclerview.widget.RecyclerView
@@ -19,11 +20,18 @@ class BuscadorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.buscador)
+        findViewById<RadioGroup>(R.id.priority).check(R.id.todas)
         findViewById<Button>(R.id.boton).setOnClickListener {
+            var priorId = 4
+            when(findViewById<RadioGroup>(R.id.priority).checkedRadioButtonId){
+                R.id.uno -> priorId = 1
+                R.id.dos -> priorId = 2
+                R.id.tres -> priorId = 3
+            }
             var list = if (buscador.text.toString() == "")
-                BDController().getTasks(this)
+                BDController().getTasks(this, priorId)
             else
-                BDController().getTasksContaining(this, buscador.text.toString())
+                BDController().getTasksContaining(this, buscador.text.toString(), priorId)
             val rV = findViewById<RecyclerView>(R.id.recyclerView)
             val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
             rV.adapter =  adapter

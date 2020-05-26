@@ -9,6 +9,8 @@ import app.bd.BDManager
 import app.logic.entities.Task
 import app.logic.utils.CalendarUtils
 import app.logic.utils.RequestCode
+import kotlinx.android.synthetic.main.buscador.view.*
+import sample.R
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -120,14 +122,17 @@ class BDController {
         }
     }
 
-    fun getTasksContaining(context: Context, query: String): ArrayList<Task>{
+    fun getTasksContaining(context: Context, query: String, priorId: Int): ArrayList<Task>{
         var list = ArrayList<Task>()
         val bdHelper = BDManager(context)
         val db = bdHelper.readableDatabase
+        var selection = "(LOWER(descripcion) LIKE LOWER('%$query%') OR beginTime LIKE '%$query%' OR endTime LIKE '%$query%' OR date lIKE '%$query%')"
+        if(priorId!= 4)
+            selection += " AND priority LIKE '%$priorId%'"
         val cursor = db.query(
             "TASK",
             null ,
-            "LOWER(descripcion) LIKE LOWER('%$query%') OR beginTime LIKE '%$query%' OR endTime LIKE '%$query%' OR date lIKE '%$query%'",
+            selection,
             null,
             null,
             null,
@@ -151,14 +156,17 @@ class BDController {
         return list
     }
 
-    fun getTasks(context: Context): ArrayList<Task>{
+    fun getTasks(context: Context, priorId: Int): ArrayList<Task>{
         var list = ArrayList<Task>()
         val bdHelper = BDManager(context)
         val db = bdHelper.readableDatabase
+        var selection: String? = null
+        if(priorId != 4)
+            selection = "priority LIKE '%$priorId%'"
         val cursor = db.query(
             "TASK",
             null ,
-            null,
+            selection,
             null,
             null,
             null,

@@ -87,7 +87,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun refreshPortraitView(){
         setContentView(R.layout.activity_main)
-        val list = BDController().getTasks(this)
+        val list = BDController().getTasks(this, 4)
         val rV = findViewById<RecyclerView>(R.id.recyclerView)
         val adapter = RecyclerAdapter(list, Configuration.ORIENTATION_PORTRAIT)
         rV.adapter =  adapter
@@ -243,7 +243,7 @@ class MainActivity : AppCompatActivity() {
             )
         )
 
-        val maxTasksInLand = 100
+        val maxTasksInLand = 7
         for(j in 0 until maxTasksInLand) {
             for (i in 0 until l.size) {
                 if(i>4)

@@ -13,6 +13,41 @@
             android:hint = "Busca por descripción, fecha u hora"
             android:id="@+id/buscador"
             />
+    <RadioGroup
+            android:id="@+id/priority"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            >
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Sin más"
+                android:textSize="10dp"
+                android:id="@+id/uno">
+        </RadioButton>
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Importante"
+                android:textSize="10dp"
+                android:id="@+id/dos">
+        </RadioButton>
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Muy importante"
+                android:textSize="10dp"
+                android:id="@+id/tres">
+        </RadioButton>
+        <RadioButton
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="Todas"
+                android:textSize="10dp"
+                android:id="@+id/todas">
+        </RadioButton>
+    </RadioGroup>
     <Button
             android:layout_width="match_parent"
             android:textAlignment="center"

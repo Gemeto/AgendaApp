@@ -24,23 +24,4 @@ class AlarmReceiver : BroadcastReceiver() {
         context.startActivity(i)
     }
 
-    @RequiresApi(Build.VERSION_CODES.O)
-    fun sendNotification(context: Context){
-        // This is the Notification Channel ID. Notification Channel is only for Oreo or higher
-        val NOTIFICATION_CHANNEL_ID = "channel_id"
-        val notificationChannel = NotificationChannel(NOTIFICATION_CHANNEL_ID, "CHANNEL 1", NotificationManager.IMPORTANCE_DEFAULT)
-        //Sets whether notifications from these Channel should be visible on Lockscreen or not
-        notificationChannel.lockscreenVisibility = Notification.VISIBILITY_PUBLIC
-        val notificationManager = context.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
-        notificationManager.createNotificationChannel(notificationChannel)
-        val builder = NotificationCompat.Builder(context, NOTIFICATION_CHANNEL_ID)
-        builder.setContentTitle(AppPreferences.descripcion)
-        builder.setSmallIcon(R.drawable.navigation_empty_icon)
-        val notification = builder.build()
-        // Unique identifier for notification
-        val NOTIFICATION_ID = 101
-        //This is what will issue the notification i.e.notification will be visible
-        val notificationManagerCompat = NotificationManagerCompat.from(context)
-        notificationManagerCompat.notify(NOTIFICATION_ID, notification)
-    }
 }
